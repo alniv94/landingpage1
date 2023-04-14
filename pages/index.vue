@@ -1,5 +1,5 @@
 <template>
-    <v-container>
+    <v-container fluid>
       
         <Hero/>
         <Footer/>
@@ -13,13 +13,8 @@
     import Navigation from './components/Navigation.vue';
 </script>
 
-<style>
+<style scoped>
 *{
-  margin: 0 !important;
   padding: 0px !important;
-}
-
-.v-container {
-    max-width: 100%;
 }
 </style>
