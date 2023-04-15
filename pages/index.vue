@@ -3,7 +3,7 @@
         <Hero/>
         <Footer/>
     </v-container>
-    
+
 </template>
 
 <script setup>
@@ -15,5 +15,6 @@
 <style scoped>
 *{
   padding: 0px !important;
+  margin: 0;
 }
 </style>
