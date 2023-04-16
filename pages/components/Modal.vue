@@ -1,5 +1,4 @@
 <template>
-  
     <v-dialog v-model="dialog" width="500px" >
       <template v-slot:activator="{ props }">
         <v-btn color="secondary" v-bind="props"> Login </v-btn>
@@ -30,7 +29,7 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
-  
+
 </template>
 
 <script>

@@ -9,6 +9,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@mdi/js": "^7.2.96",
     "nuxt": "^3.4.0"
   },
   "dependencies": {
