@@ -7,9 +7,11 @@
         </div>
       </v-col>
       <v-col cols="12" sm="5" class="bg-grey-lighten-5">
-        <div class="ml-10 pa-5 d-flex justify-center flex-column">
-          <span class="text-lg-h3 text-sm-h4">Apollo Lightings</span>
-          <p>Enterprise Resource Planning</p>
+        <div class="ml-10 pa-5 d-flex flex-column">
+          <v-layout class="flex-column justify-center align-center">
+            <v-img src="/images/logo.png" class="w-25 h-25"></v-img>
+            <span>Enterprise Resource Planning</span>
+          </v-layout>
           <v-form>
             <v-card class="mt-8 pa-10" flat max-width="450">
               <v-card-title class="mb-5">
@@ -17,6 +19,7 @@
               </v-card-title>
               <v-card-text class="pa-5">
                 <v-text-field
+                  :rules="rules"
                   density="comfortable"
                   label="Username"
                   variant="underlined"
@@ -57,7 +60,15 @@
   </v-container>
 </template>
 
-<script></script>
+<script setup>
+const rules = [
+  (value) => {
+    if (value) return true;
+
+    return "You must enter a username.";
+  },
+];
+</script>
 
 <style scoped>
 .banner {

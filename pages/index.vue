@@ -2,7 +2,6 @@
     <v-container fluid>
         <Hero/>
         <Footer/>
-        <v-icon icon="mdi-home"></v-icon>
     </v-container>
 
 </template>
