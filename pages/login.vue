@@ -2,8 +2,19 @@
   <v-container class="pa-0 fill-height" fluid>
     <v-row justify="center" class="container">
       <v-col cols="12" sm="7" class="banner hidden-sm-and-down">
-        <div>
-          <v-img src="/images/logo.png" class="w-25"></v-img>
+        <div class="d-flex flex-column justify-center align-center">
+          <v-img src="/images/hero.png" class="w-25"></v-img>
+          <span class=""
+            >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid,
+            dolores!</span
+          >
+          <v-btn
+            class="mt-5"
+            color="indigo-darken-3"
+            size="large"
+          >
+            Visit page
+          </v-btn>
         </div>
       </v-col>
       <v-col cols="12" sm="5" class="bg-grey-lighten-5">

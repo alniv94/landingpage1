@@ -17,8 +17,8 @@
           </div>
         </v-col>
         <v-col cols="12" sm="5" lg="6">
-          <!-- <v-img :src="require('/images/logo.png')" alt="banner" class="img-fluid" aspect-ratio="1"/> -->
-          <img src="/images/logo.png" alt="logo">
+          
+          <!-- <img src="/images/logo.png" alt="logo"> -->
         </v-col>
       </v-row>
     </v-container>
@@ -56,7 +56,7 @@ import Modal from "./Modal.vue";
   max-width: 100%;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .banner-title {
     font-size: 29px;
     line-height: 40px;
@@ -64,5 +64,5 @@ import Modal from "./Modal.vue";
   .banner-wrapper {
     padding: 90px 0 20px;
   }
-}
+} */
 </style>

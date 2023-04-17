@@ -1,24 +1,13 @@
 <template>
-    <NuxtLayout>
-        <NuxtPage />
-        <v-container fluid>
-        <Hero/>
-        <Footer/>
-    </v-container>
-
-    </NuxtLayout>
-   
+  <v-container fluid class="pa-0">
+    <Navigation/>
+    <Hero />
+    <Footer />
+  </v-container>
 </template>
 
 <script setup>
-    import Hero from './components/Hero.vue';
-    import Footer from './components/Footer.vue';
-    import Navigation from './components/Navigation.vue';
+import Hero from "./components/Hero.vue";
+import Footer from "./components/Footer.vue";
+import Navigation from "./components/Navigation.vue";
 </script>
-
-<style scoped>
-*{
-  padding: 0px !important;
-  margin: 0;
-}
-</style>
