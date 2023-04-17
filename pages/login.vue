@@ -30,7 +30,7 @@
                 </v-text-field>
 
                 <v-text-field
-                  class=""
+                  :rules="rules"
                   density="comfortable"
                   label="Password"
                   variant="underlined"
@@ -65,7 +65,7 @@ const rules = [
   (value) => {
     if (value) return true;
 
-    return "You must enter a username.";
+    return "All fields must be filled.";
   },
 ];
 </script>

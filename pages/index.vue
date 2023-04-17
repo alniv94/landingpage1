@@ -1,9 +1,13 @@
 <template>
-    <v-container fluid>
+    <NuxtLayout>
+        <NuxtPage />
+        <v-container fluid>
         <Hero/>
         <Footer/>
     </v-container>
 
+    </NuxtLayout>
+   
 </template>
 
 <script setup>
