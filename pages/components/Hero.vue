@@ -11,9 +11,6 @@
             <h4 class="banner-subtitle white--text font-weight-regular">
               Lorem ipsum dolor sit amet.
             </h4>
-            <div class="mt-md-16 mt-10 d-sm-flex d-block">
-              <Modal />
-            </div>
           </div>
         </v-col>
         <v-col cols="12" sm="5" lg="6">

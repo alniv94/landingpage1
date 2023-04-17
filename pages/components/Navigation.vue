@@ -1,47 +1,51 @@
 <template>
-  <v-app-bar flat>
-    <nav class="d-flex justify-space-between">
-      <div class="d-flex justify-space-between">
-        <v-app-bar-title>Apollo Systems</v-app-bar-title>
-      </div>
-      <div >
-        <v-menu class="d-flex justify-space-between">
-          <template v-slot:activator="{ props }">
-            <v-btn color="primary" v-bind="props" flat append-icon="mdi-chevron-down"> Apps </v-btn>
-          </template>
-       
-        </v-menu>
-        <v-menu>
-          <template v-slot:activator="{ props }">
-            <v-btn color="primary" v-bind="props" flat append-icon="mdi-chevron-down"> Apps </v-btn>
-            <Dropdown :items="items"/>
-          </template>
-          <v-list>
-            <v-list-item
-              v-for="(item, index) in items"
-              :key="index"
-              :value="index"
-            >
-              <v-list-item-title>{{ item.title }}</v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
-      </div>
-    </nav>
-  </v-app-bar>
+  <v-card>
+    <v-layout>
+      <v-app-bar color="" flat>
+        <v-app-bar-title>Apollo System</v-app-bar-title>
+        <v-app-bar-title>
+          <v-btn @click.stop="drawer = !drawer" variant="text" append-icon="mdi-chevron-down">Apps</v-btn>
+        </v-app-bar-title>
+      </v-app-bar>
+
+      <v-navigation-drawer v-model="drawer" location="top" temporary>
+        <v-list :items="items"></v-list>
+      </v-navigation-drawer>
+
+      <v-main style="height: 50px"> </v-main>
+    </v-layout>
+  </v-card>
 </template>
 
 <script>
-import Dropdown from './Dropdown.vue'
 export default {
   data: () => ({
+    drawer: false,
+    group: null,
     items: [
-      { title: "Click Me" },
-      { title: "Click Me" },
-      { title: "Click Me" },
-      { title: "Click Me 2" },
+      {
+        title: "Foo",
+        value: "foo",
+      },
+      {
+        title: "Bar",
+        value: "bar",
+      },
+      {
+        title: "Fizz",
+        value: "fizz",
+      },
+      {
+        title: "Buzz",
+        value: "buzz",
+      },
     ],
   }),
-  
+
+  watch: {
+    group() {
+      this.drawer = false;
+    },
+  },
 };
 </script>
