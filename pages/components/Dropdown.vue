@@ -1,13 +1,15 @@
 <template>
   <div class="d-flex">
-      <finance/>
-      <sale />
+      <Finance/>
+      <Sale />
+      <HumanResource/>
   </div>
 </template>
 
 <script setup>
-import finance from './dropdown/finance.vue'
-import sale from './dropdown/sale.vue'
+import Finance from './dropdown/finance.vue'
+import Sale from './dropdown/sale.vue'
+import HumanResource from './dropdown/HumanResource.vue'
 
 
 </script>
