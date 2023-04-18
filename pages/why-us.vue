@@ -1,9 +1,9 @@
 <template>
-    <v-container class="text-center">
+    <v-container class="text-center mt-15">
       <h2>Why Choose Apollo System?</h2>
       <v-row class="my-8">
         <v-col cols="12" md="4">
-          <v-card>
+          <v-card  class="why-choose-card">
             <v-card-text>
               <v-icon size="48" color="primary">mdi-clock-time-eight</v-icon>
               <h3>Save Time</h3>
@@ -12,7 +12,7 @@
           </v-card>
         </v-col>
         <v-col cols="12" md="4">
-          <v-card>
+          <v-card class="why-choose-card">
             <v-card-text>
               <v-icon size="48" color="primary">mdi-cash-check</v-icon>
               <h3>Save Money</h3>
@@ -21,7 +21,7 @@
           </v-card>
         </v-col>
         <v-col cols="12" md="4">
-          <v-card>
+          <v-card class="why-choose-card">
             <v-card-text>
               <v-icon size="48" color="primary">mdi-chart-line</v-icon>
               <h3>Drive Growth</h3>
@@ -34,4 +34,9 @@
     </v-container>
   </template>
   
-  
+  <style>
+  .why-choose-card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+  }
+</style>

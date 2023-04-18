@@ -11,6 +11,6 @@
 import Hero from "./components/Hero.vue";
 
 import Navigation from "./components/Navigation.vue";
-import About from "./components/About.vue";
+import About from "./about.vue";
 import WhyUs from "./why-us.vue";
 </script>

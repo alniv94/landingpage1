@@ -10,7 +10,7 @@
         >
     </div>
   </v-app-bar>
-  <v-navigation-drawer app v-model="drawer" location="top">
+  <v-navigation-drawer app v-model="drawer" location="top" disable-resize-watcher>
     <!--Dropdown Menu-->
     <dropdown />
 
