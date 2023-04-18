@@ -4,18 +4,29 @@
       <v-row justify="center">
         <v-col cols="12" sm="7" lg="6" class="d-flex align-center">
           <div class="text-sm-left text-center">
-            <h1 class="banner-title font-weight-bold">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam,
-              nesciunt!
-            </h1>
-            <h4 class="banner-subtitle white--text font-weight-regular">
-              Lorem ipsum dolor sit amet.
+            <span class="font-weight-bold text-white text-lg-h3 text-md-h5 text-sm-h4">
+              Elevate Your Business with Apollo System's ERP
+            </span>
+            <h4 class="text-white font-weight-regular">
+              Streamline operations and increase productivity with Apollo
+              System's customizable and user-friendly ERP solutions for
+              businesses of all sizes.
             </h4>
           </div>
         </v-col>
         <v-col cols="12" sm="5" lg="6">
+          <v-btn class="rounded-circle play-btn" elevation="4" size="x-large"  color="green-lighten-3" v-ripple.center>
+            <v-icon icon="mdi-play"/>
+          <v-dialog
+          v-model="dialog"
+        activator="parent"
+        width="auto">
+
+          <ModalVideo/>
           
-          <!-- <img src="/images/logo.png" alt="logo"> -->
+          </v-dialog>
+          </v-btn>
+          <v-img src="../images/logo.png"> </v-img>
         </v-col>
       </v-row>
     </v-container>
@@ -23,43 +34,28 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
+import ModalVideo from '../hero/modal.vue';
+const dialog =ref(false);
 
-import Modal from "./Modal.vue";
 </script>
 
 <style scoped>
-.banner-title {
-  font-size: 42px;
-  line-height: 54px;
-  margin: 20px 0 15px;
-}
-
-.banner-subtitle {
-  font-size: 21px;
-}
-
 .banner-wrapper {
-  background: rgb(165, 214, 167);
-  background: radial-gradient(
-    circle,
-    rgba(165, 214, 167, 1) 18%,
-    rgba(56, 185, 36, 1) 100%,
-    rgba(36, 185, 61, 1) 100%
-  );
+  background: #025777;
   padding: 20px 0 20px;
-  min-height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   max-width: 100%;
 }
+.play-btn{
+  position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
 
-/* @media (max-width: 767px) {
-  .banner-title {
-    font-size: 29px;
-    line-height: 40px;
-  }
-  .banner-wrapper {
-    padding: 90px 0 20px;
-  }
-} */
+
 </style>

@@ -1,51 +1,31 @@
 <template>
-  <v-card>
-    <v-layout>
-      <v-app-bar color="" flat>
-        <v-app-bar-title>Apollo System</v-app-bar-title>
-        <v-app-bar-title>
-          <v-btn @click.stop="drawer = !drawer" variant="text" append-icon="mdi-chevron-down">Apps</v-btn>
-        </v-app-bar-title>
-      </v-app-bar>
-
-      <v-navigation-drawer v-model="drawer" location="top" temporary>
-        <v-list :items="items"></v-list>
-      </v-navigation-drawer>
-
-      <v-main style="height: 50px"> </v-main>
-    </v-layout>
-  </v-card>
+  <v-app-bar color="#025777" flat>
+    <div class="d-flex  w-100">
+      <v-app-bar-title class="text-white pa-5">Apollo Systems</v-app-bar-title>
+        <v-app-bar-title
+          class="text-white pointer pa-5"
+          @click="drawer = !drawer"
+          append-icon="mdi-chevron-down"
+          >Apps</v-app-bar-title
+        >
+    </div>
+  </v-app-bar>
+  <v-navigation-drawer app v-model="drawer" location="top">
+    <!--Dropdown Menu-->
+    <dropdown />
+    
+  </v-navigation-drawer>
 </template>
 
-<script>
-export default {
-  data: () => ({
-    drawer: false,
-    group: null,
-    items: [
-      {
-        title: "Foo",
-        value: "foo",
-      },
-      {
-        title: "Bar",
-        value: "bar",
-      },
-      {
-        title: "Fizz",
-        value: "fizz",
-      },
-      {
-        title: "Buzz",
-        value: "buzz",
-      },
-    ],
-  }),
+<script setup>
+import { ref } from "vue";
+import Dropdown from "./Dropdown.vue";
 
-  watch: {
-    group() {
-      this.drawer = false;
-    },
-  },
-};
+const drawer = ref(false);
 </script>
+
+<style scoped>
+.pointer {
+  cursor: pointer;
+}
+</style>

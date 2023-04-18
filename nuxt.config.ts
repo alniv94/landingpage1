@@ -4,5 +4,6 @@ export default defineNuxtConfig({
     build: {
         transpile: ["vuetify"]
     },
+    components: true
     
 })

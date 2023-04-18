@@ -2,12 +2,15 @@
   <v-container fluid class="pa-0">
     <Navigation/>
     <Hero />
-    <Footer />
+    <About/>
+    <WhyUs/>
   </v-container>
 </template>
 
 <script setup>
 import Hero from "./components/Hero.vue";
-import Footer from "./components/Footer.vue";
+
 import Navigation from "./components/Navigation.vue";
+import About from "./components/About.vue";
+import WhyUs from "./why-us.vue";
 </script>

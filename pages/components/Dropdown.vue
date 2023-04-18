@@ -1,25 +1,15 @@
 <template>
-       <v-list>
-            <v-list-item
-              v-for="(item, index) in items"
-              :key="index"
-              :value="index"
-            >
-              <v-list-item-title>{{ item.title }}</v-list-item-title>
-            </v-list-item>
-          </v-list>
+  <div class="d-flex">
+      <finance/>
+      <sale />
+  </div>
 </template>
 
-<script>
-export default {
-  data: () => ({
-    items: [
-      { title: "Click Me" },
-      { title: "Click Me" },
-      { title: "Click Me" },
-      { title: "Click Me 2" },
-    ],
-  }),
-  props: ['title', 'items']
-};
+<script setup>
+import finance from './dropdown/finance.vue'
+import sale from './dropdown/sale.vue'
+
+
 </script>
+
+<style scoped></style>
