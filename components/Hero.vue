@@ -22,7 +22,7 @@
         activator="parent"
         width="auto">
 
-          <ModalVideo/>
+          <HeroModal/>
           
           </v-dialog>
           </v-btn>
@@ -35,7 +35,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import ModalVideo from '../hero/modal.vue';
+
 const dialog =ref(false);
 
 </script>

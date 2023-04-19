@@ -4,6 +4,12 @@ export default defineNuxtConfig({
     build: {
         transpile: ["vuetify"]
     },
-    components: true
+    components: {
+        global: true,
+        dirs: [
+            '~/components/',
+           
+        ]
+    }
     
 })
