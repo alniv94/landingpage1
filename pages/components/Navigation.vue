@@ -1,5 +1,6 @@
 <template>
-  <v-app-bar color="#025777" flat>
+  <v-container class="px-2">
+    <v-app-bar color="#025777" flat>
     <div class="d-flex  w-100">
       <v-app-bar-title class="text-white pa-5">Apollo Systems</v-app-bar-title>
         <v-app-bar-title
@@ -10,6 +11,8 @@
         >
     </div>
   </v-app-bar>
+  </v-container>
+
   <v-navigation-drawer app v-model="drawer" location="top" disable-resize-watcher>
     <!--Dropdown Menu-->
     <dropdown />

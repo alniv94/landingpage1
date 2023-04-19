@@ -1,8 +1,7 @@
 <template>
   <v-app>
     <v-container fluid class="pa-0">
-      <slot />
-      <Footer/>
+      <slot /> 
     </v-container>
     
   </v-app>

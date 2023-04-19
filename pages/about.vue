@@ -1,6 +1,7 @@
 <template>
-  <v-container class="mt-15">
-    <h4 class="my-10 text-indigo-accent-3 text-capitalize" >Who we are</h4>
+  <v-container class="mt-15" style="height: 500px;">
+    <div>
+      <h4 class="my-10 text-indigo-accent-3 text-capitalize" >Who we are</h4>
     <v-row>
       <v-col cols="12"  sm="6">
         <h1>Empowering businesses to succeed through innovative ERP solutions.</h1>
@@ -19,5 +20,7 @@
       </v-col>
     </v-row>
     <v-btn color="warning" class="white--text mx-auto">Learn More</v-btn>
+    </div>
+  
   </v-container>
 </template>
