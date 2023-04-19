@@ -17,7 +17,7 @@
           <v-row>
             <v-col cols="12" md="6" class="pa-10">
               <span class="text-h5 ma-2 text-justify">{{ item.content }}</span>
-              <v-list>
+              <v-list class="bg-grey-lighten-5">
                 <v-list-item
                   v-for="(listItem, index) in item.subcontent"
                   :key="index"

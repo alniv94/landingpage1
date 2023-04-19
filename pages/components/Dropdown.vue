@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex">
+  <div class="d-flex flex-lg-row flex-column">
       <Finance/>
       <Sale />
       <HumanResource/>
