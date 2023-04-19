@@ -3,6 +3,7 @@
       <DropdownFinance/>
       <DropdownSale />
       <DropdownHumanResource/>
+      <DropdownInventory/>
   </div>
 </template>
 

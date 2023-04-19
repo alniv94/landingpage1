@@ -5,7 +5,7 @@
     <About/>
     <WhyUs/>
     <Contact/>
-    <Footer/>
+    
   </v-container>
 </template>
 
