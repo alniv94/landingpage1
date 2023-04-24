@@ -42,7 +42,7 @@ const testimonials = [
   },
   {
     quote:
-      "Since implementing the ERP solution from Apollo System, we have seen a significant increase in our productivity and efficiency. We highly recommend their services.",
+      "Since Our decision to implement the ERP solution from Apollo System has had a transformative impact on our business. With their innovative software, we have seen a significant increase in our productivity and efficiency, enabling us to streamline our operations and achieve more in less time. We have been particularly impressed by the level of customization and flexibility offered by the system, which has allowed us to tailor the solution to our unique needs and requirements. We are extremely satisfied with the results we have achieved with the help of Apollo System and highly recommend their services to any organization looking to optimize their processes and achieve greater success. the ERP solution from Apollo System, we have seen a significant increase in our productivity and efficiency. We highly recommend their services.",
     author: "Bob Johnson, COO of 123 Corp",
     image: "",
   },

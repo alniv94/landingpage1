@@ -27,7 +27,7 @@
                 </v-list-item>
               </v-list>
             </v-col>
-            <v-col cols="12" md="6" >
+            <v-col cols="12" md="6" class="hidden-sm-and-down">
               <div class="d-flex justify-center align-center mt-5 rounded-lg">
                 <v-img :src="item.image" height="300" ></v-img>
               </div>
