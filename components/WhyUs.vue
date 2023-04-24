@@ -1,5 +1,13 @@
 <template>
-  <v-container>
+  <v-container v-motion
+            :initial="{
+            opacity: 0,
+            y: 100,
+            }"
+            :visible="{
+            opacity: 1,
+            y: 0,
+            }">
     <h1 class="text-center pa-5 mb-10 text-accent">
       Why us Apollo Systems Enterprise Resource Planning (ERP)?
     </h1>

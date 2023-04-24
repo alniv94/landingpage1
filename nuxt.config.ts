@@ -10,6 +10,8 @@ export default defineNuxtConfig({
             '~/components/',
            
         ]
-    }
+    },
+    modules: ['@vueuse/motion/nuxt'],
+    
     
 })

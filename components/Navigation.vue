@@ -1,38 +1,35 @@
 <template>
-  <v-container class="px-2" >
+  <v-container class="px-2">
     <v-app-bar color="#025777" flat>
       <v-row>
-        
         <v-col cols="12" sm="6">
           <div class="d-flex justify-spae-between ma-auto">
             <v-app-bar-title class="text-white pa-5"
-            >Apollo Systems</v-app-bar-title
-          >
-          <template v-if="isMobile">
-            <v-icon
-              @click="drawer = !drawer"
-              class="text-white align-center pr-10 ma-auto"
-              >mdi-menu</v-icon
+              >Apollo Systems</v-app-bar-title
             >
-          </template>
+            <template v-if="isMobile">
+              <v-icon
+                @click="drawer = !drawer"
+                class="text-white align-center pr-10 ma-auto"
+                >mdi-menu</v-icon
+              >
+            </template>
           </div>
-       
         </v-col>
         <v-col>
-          <div class="d-flex ">
-          <v-app-bar-title
-            class="text-white pointer py-5"
-            @click="drawer = !drawer"
-            v-if="!isMobile"
-            >Apps
-            <v-icon v-if="!isMobile" class="text-white pointer">
-              {{ drawer ? closeIcon : chevronDownIcon }}
-            </v-icon>
-          </v-app-bar-title>
-        </div>
+          <div class="d-flex">
+            <v-app-bar-title
+              class="text-white pointer py-5"
+              @click="drawer = !drawer"
+              v-if="!isMobile"
+              >Apps
+              <v-icon v-if="!isMobile" class="text-white pointer">
+                {{ drawer ? closeIcon : chevronDownIcon }}
+              </v-icon>
+            </v-app-bar-title>
+          </div>
         </v-col>
       </v-row>
-     
     </v-app-bar>
   </v-container>
 
@@ -43,14 +40,18 @@
     disable-resize-watcher
   >
     <!--Dropdown Menu-->
-    <dropdown />
-
+    <div class="d-flex justify-space-around flex-lg-row flex-column">
+      <DropdownFinance />
+      <DropdownSale />
+      <DropdownHumanResource />
+      <DropdownInventory />
+    </div>
   </v-navigation-drawer>
 </template>
 
 <script setup>
 import { ref } from "vue";
-import Dropdown from "./Dropdown.vue";
+
 
 const drawer = ref(false);
 const isMobile = ref(false);

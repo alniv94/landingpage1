@@ -1,5 +1,13 @@
 <template>
-  <v-container>
+  <v-container   v-motion
+            :initial="{
+            opacity: 0,
+            y: 100,
+            }"
+            :visible="{
+            opacity: 1,
+            y: 0,
+            }">
     <h1 class="text-center my-10 text-accent">What Our Clients Say</h1>
     <v-carousel hide-delimiters show-arrows="hover" cycle>
       <v-carousel-item
@@ -8,11 +16,11 @@
       >
         <v-card>
           <v-card-text>
-            <v-icon size="x-large" color="accent"
+            <v-icon size="large" color="accent"
               >mdi-format-quote-open-outline</v-icon
             >
             <p class="text--primary d-inline pa-3">{{ testimonial.quote }}</p>
-            <v-icon size="x-large" color="accent"
+            <v-icon size="large" color="accent"
               >mdi-format-quote-close-outline</v-icon
             >
             <div class="d-flex flex-column justify-center align-center ma-5">

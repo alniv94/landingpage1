@@ -1,6 +1,5 @@
 <template>
-  <v-container class="my-16">
-    
+  <v-container class="my-5">
     <v-row>
       <v-col cols="12" md="6">
         <v-card

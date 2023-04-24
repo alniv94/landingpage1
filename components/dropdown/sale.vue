@@ -1,5 +1,5 @@
 <template>
-       <v-card class="mx-auto" flat>
+       
       <v-list class="ma-3">
         <v-list-subheader>
           <span class="text-h6">Sales</span>
@@ -12,7 +12,7 @@
           </v-list-item-title>
         </v-list-item>
       </v-list>
-    </v-card>
+  
 </template>
 
 <script setup> 
