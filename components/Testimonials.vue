@@ -9,12 +9,13 @@
             y: 0,
             }">
     <h1 class="text-center my-10 text-accent">What Our Clients Say</h1>
-    <v-carousel hide-delimiters show-arrows="hover" cycle>
+    <v-carousel hide-delimiters show-arrows="hover" cycle >
       <v-carousel-item
         v-for="(testimonial, index) in testimonials"
         :key="index"
+
       >
-        <v-card>
+        <v-card >
           <v-card-text>
             <v-icon size="large" color="accent"
               >mdi-format-quote-open-outline</v-icon
@@ -29,7 +30,10 @@
             </div>
           </v-card-text>
         </v-card>
+        
+        
       </v-carousel-item>
+    
     </v-carousel>
   </v-container>
 </template>

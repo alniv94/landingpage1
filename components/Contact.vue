@@ -1,9 +1,18 @@
 <template>
-  <v-container class="my-5">
+  <v-container class="my-5"
+  v-motion
+            :initial="{
+            opacity: 0,
+            y: 100,
+            }"
+            :visible="{
+            opacity: 1,
+            y: 0,
+            }">
     <v-row>
       <v-col cols="12" md="6">
         <v-card
-          class="d-flex h-100 flex-column justify-space-between pa-5"
+          class="d-flex  flex-column justify-space-between pa-5"
           outlined
           color=""
         >
