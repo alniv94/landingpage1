@@ -1,13 +1,14 @@
 <template>
-  <v-footer color="secondary">
+  <v-container>
+    <v-footer color="secondary">
     <v-row>
       <v-col cols="12">
-        <h3 class="white--text mb-4">Apollo System</h3>
+        <h3 class="white--text mb-4 text-center">Apollo System</h3>
       </v-col>
       <v-col cols="12" md="6">
         <h4 class="white--text mb-2">About Us</h4>
-        <v-list color="primary">
-          <v-list-item v-for="item in items" :key="item.title" :to="item.link">
+        <v-list class="bg-secondary">
+          <v-list-item v-for="item in items" :to="item.link" >
             <v-list-item-title class="white--text">{{
               item.title
             }}</v-list-item-title>
@@ -22,7 +23,13 @@
         <v-icon class="mx-2" size="24" color="white">mdi-instagram</v-icon>
       </v-col>
     </v-row>
+    <div class="">
+      <p>Apollo System, All rights reserved</p>
+    </div>
   </v-footer>
+  </v-container>
+ 
+  
 </template>
 
 <script setup>

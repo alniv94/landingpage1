@@ -2,6 +2,7 @@
   <v-container class="px-2" >
     <v-app-bar color="#025777" flat>
       <v-row>
+        
         <v-col cols="12" sm="6">
           <div class="d-flex justify-spae-between ma-auto">
             <v-app-bar-title class="text-white pa-5"

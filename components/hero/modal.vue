@@ -1,7 +1,7 @@
 <template>
   <iframe
-    width="781"
-    height="573"
+    width="1067"
+    height="600"
     src="https://www.youtube.com/embed/AVAvFn0QPR8"
     title="Apollo Systems"
     frameborder="0"

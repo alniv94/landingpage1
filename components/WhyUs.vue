@@ -28,7 +28,7 @@
               </v-list>
             </v-col>
             <v-col cols="12" md="6" >
-              <div class="d-flex justify-center align-center">
+              <div class="d-flex justify-center align-center mt-5 rounded-lg">
                 <v-img :src="item.image" height="300" ></v-img>
               </div>
               
@@ -57,7 +57,7 @@ const items = [
       list3:
         "Enhanced financial visibility - Our ERP solutions provide powerful financial reporting and analytics capabilities, enabling you to gain a deeper understanding of your financial performance and identify areas where you can reduce costs and increase profitability.",
     },
-    image: "./images/save-money.jpg",
+    image: "./images/save-money.png",
   },
   {
     title: "Save Time",
