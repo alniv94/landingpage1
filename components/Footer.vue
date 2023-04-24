@@ -1,6 +1,5 @@
 <template>
-  <v-container>
-    <v-footer color="secondary">
+  <v-footer color="secondary">
     <v-row>
       <v-col cols="12">
         <h3 class="white--text mb-4 text-center">Apollo System</h3>
@@ -27,8 +26,6 @@
       <p>Apollo System, All rights reserved</p>
     </div>
   </v-footer>
-  </v-container>
- 
   
 </template>
 
