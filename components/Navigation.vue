@@ -1,9 +1,10 @@
 <template>
-  <v-container class="px-2">
+  <v-container class="px-2" >
     <v-app-bar color="#025777" flat>
-      <div class="d-flex justify-space-between  w-100">
-        <div class="d-flex justify-space-between w-100">
-          <v-app-bar-title class="text-white pa-5"
+      <v-row>
+        <v-col cols="12" sm="6">
+          <div class="d-flex justify-spae-between ma-auto">
+            <v-app-bar-title class="text-white pa-5"
             >Apollo Systems</v-app-bar-title
           >
           <template v-if="isMobile">
@@ -13,9 +14,11 @@
               >mdi-menu</v-icon
             >
           </template>
-        </div>
-
-        <div class="d-flex justify-start">
+          </div>
+       
+        </v-col>
+        <v-col>
+          <div class="d-flex ">
           <v-app-bar-title
             class="text-white pointer py-5"
             @click="drawer = !drawer"
@@ -26,7 +29,9 @@
             </v-icon>
           </v-app-bar-title>
         </div>
-      </div>
+        </v-col>
+      </v-row>
+     
     </v-app-bar>
   </v-container>
 
@@ -38,6 +43,7 @@
   >
     <!--Dropdown Menu-->
     <dropdown />
+
   </v-navigation-drawer>
 </template>
 
@@ -47,9 +53,10 @@ import Dropdown from "./Dropdown.vue";
 
 const drawer = ref(false);
 const isMobile = ref(false);
+
+// hamburger menu in small screen
 const chevronDownIcon = "mdi-chevron-down";
 const closeIcon = "mdi-close";
-
 const handleResize = () => {
   isMobile.value = window.innerWidth < 768;
 };

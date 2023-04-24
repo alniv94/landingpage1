@@ -1,5 +1,5 @@
 <template>
-  <v-container class="mt-15" style="height: 500px;">
+  <v-container class="mt-15" >
     <div>
       <h4 class="my-10 text-indigo-accent-3 text-capitalize" >Who we are</h4>
     <v-row>

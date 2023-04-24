@@ -4,7 +4,7 @@
       <v-row justify="center">
         <v-col cols="12" sm="7" lg="6" class="d-flex align-center">
           <div class="text-sm-left text-center">
-            <span class="font-weight-bold text-white text-lg-h3 text-md-h5 text-sm-h4">
+            <span class="font-weight-bold text-white text-lg-h3 ">
               Elevate Your Business with Apollo System's ERP
             </span>
             <h4 class="text-white font-weight-regular">

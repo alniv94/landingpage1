@@ -21,11 +21,9 @@ export default defineNuxtPlugin((nuxt) =>{
               light: {
                 colors: {
                   primary: '#025777',
-                  secondary: '#8ED1FC',
-                  accent: '#F2C60F',
-                  error: '#FF5252',
-                  warning: '#FFC107',
-                  info: '#2196F3',
+                  secondary: '#2C7DA0',
+                  accent: '#012A4A',
+                  info: '#61A5C2',
                   success: '#4CAF50'
                   
                 }

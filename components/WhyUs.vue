@@ -1,12 +1,12 @@
 <template>
   <v-container>
-    <h1 class="text-center pa-5 mb-10 text-indigo-darken-4">
+    <h1 class="text-center pa-5 mb-10 text-accent">
       Why us Apollo Systems Enterprise Resource Planning (ERP)?
     </h1>
     <v-card flat class="bg-grey-lighten-5">
       <v-toolbar class="w-100">
         <v-tabs v-model="tab" class="d-flex justify-space-between w-100 ">
-          <v-tab v-for="item in items" class="w-33 font-weight-bold text-indigo-darken-4">
+          <v-tab v-for="item in items" class="w-33 font-weight-bold text-accent">
             {{ item.title }}
           </v-tab>
         </v-tabs>
@@ -27,8 +27,11 @@
                 </v-list-item>
               </v-list>
             </v-col>
-            <v-col cols="12" md="6" class="pa-10 mx-auto">
-              <v-img :src="item.image" width="350"></v-img>
+            <v-col cols="12" md="6" >
+              <div class="d-flex justify-center align-center">
+                <v-img :src="item.image" height="300" ></v-img>
+              </div>
+              
             </v-col>
           </v-row>
         </v-window-item>
@@ -68,7 +71,7 @@ const items = [
       list3:
         "Faster decision-making - With access to real-time data and analytics, our ERP solutions can help you make faster, data-driven decisions, saving time spent on manual data collection and analysis.",
     },
-    image: "",
+    image: "./images/save-time.png",
   },
   {
     title: "Drive Growth",

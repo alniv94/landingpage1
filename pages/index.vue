@@ -4,7 +4,9 @@
     <Hero />
     <About/>
     <WhyUs/>
+    <Testimonials/>
     <Contact/>
+    
     
   </v-container>
 </template>

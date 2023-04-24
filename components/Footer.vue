@@ -1,5 +1,5 @@
 <template>
-  <v-footer color="primary">
+  <v-footer color="secondary">
     <v-row>
       <v-col cols="12">
         <h3 class="white--text mb-4">Apollo System</h3>
@@ -49,5 +49,5 @@ const items = ref([
 </script>
 
 <style>
-/* add your custom styles here */
+
 </style>
