@@ -8,9 +8,9 @@
             opacity: 1,
             y: 0,
             }">
-    <h1 class="text-center pa-5 mb-10 text-accent">
+    <p class="text-center pa-5 mb-10 text-accent text-h4">
       Why us Apollo Systems Enterprise Resource Planning (ERP)?
-    </h1>
+    </p>
     <v-card flat class="bg-grey-lighten-5">
       <v-toolbar class="w-100">
         <v-tabs v-model="tab" class="d-flex justify-space-between w-100 ">

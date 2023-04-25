@@ -1,6 +1,6 @@
 <template>
   <v-container class="pl-15">
-    <v-app-bar color="#025777" flat>
+    <v-app-bar class="bg-primary" flat>
       <v-row>
         <v-col cols="12" sm="6">
           <div class="d-flex justify-spae-between ma-auto">
@@ -38,13 +38,14 @@
     v-model="drawer"
     location="top"
     disable-resize-watcher
+    temporary
   >
     <!--Dropdown Menu-->
     <div class="d-flex justify-space-around flex-lg-row flex-column">
-      <DropdownFinance />
-      <DropdownSale />
-      <DropdownHumanResource />
-      <DropdownInventory />
+      <Finance />
+      <Sale />
+      <HumanResource />
+      <Inventory />
     </div>
   </v-navigation-drawer>
 </template>
