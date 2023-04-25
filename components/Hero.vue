@@ -1,6 +1,6 @@
 <template>
-  <section class="banner-wrapper">
-    <v-container class="px-2">
+  
+    <v-container class="pa-15 bg-primary" fluid>
       <v-row justify="center">
         <v-col cols="12" sm="7" lg="6" class="d-flex align-center">
           <div class="text-sm-left text-center">
@@ -30,7 +30,7 @@
         </v-col>
       </v-row>
     </v-container>
-  </section>
+  
 </template>
 
 <script setup>
@@ -41,14 +41,7 @@ const dialog =ref(false);
 </script>
 
 <style scoped>
-.banner-wrapper {
-  background: #025777;
-  padding: 20px 0 20px;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  max-width: 100%;
-}
+
 .play-btn{
   position:relative;
   top: 50%;

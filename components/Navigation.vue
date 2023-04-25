@@ -1,5 +1,5 @@
 <template>
-  <v-container class="px-2">
+  <v-container class="pl-15">
     <v-app-bar color="#025777" flat>
       <v-row>
         <v-col cols="12" sm="6">
@@ -23,7 +23,7 @@
               @click="drawer = !drawer"
               v-if="!isMobile"
               >Apps
-              <v-icon v-if="!isMobile" class="text-white pointer">
+              <v-icon v-if="!isMobile" class="text-white pointer" size="small">
                 {{ drawer ? closeIcon : chevronDownIcon }}
               </v-icon>
             </v-app-bar-title>

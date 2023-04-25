@@ -11,7 +11,8 @@ export default defineNuxtConfig({
            
         ]
     },
-    modules: ['@vueuse/motion/nuxt'],
+    modules: ['@vueuse/motion/nuxt','nuxt-icon'],
+    
     
     
 })
