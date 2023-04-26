@@ -24,7 +24,8 @@ export default defineNuxtPlugin((nuxt) =>{
                   secondary: '#2C7DA0',
                   accent: '#012A4A',
                   info: '#61A5C2',
-                  success: '#4CAF50'
+                  success: '#4CAF50',
+                  background: '#FAFAFA'
                   
                 }
               },

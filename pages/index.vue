@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pa-0 bg-grey-lighten-5" >
+  <v-container fluid class="pa-0 bg-background" >
     <Hero />
     <Products/>
     <About/>

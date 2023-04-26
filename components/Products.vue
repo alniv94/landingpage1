@@ -1,14 +1,14 @@
 <template>
   <v-container class="mt-15 ">
     <p class="text-h4 text-accent text-center my-5 pa-5">
-      Achieve Your Business Goals with Our Suite of ERP Products
+        Tailored <strong>apps</strong>  for every need
     </p>
 
-    <div class="d-flex flex-wrap justify-space-between">
+    <div class="d-flex flex-wrap justify-lg-space-between flex-lg-row flex-sm-column justify-sm-center align-sm-center  ">
       <div class="d-flex flex-column align-center mb-10">
-        <p class="text-h6 mb-4">Manage Your Finances</p>
+        <p class="text-h6 mb-4 text-accent">Manage Your Finances</p>
         
-          <v-list class="d-flex flex-wrap justify-space-between bg-grey-lighten-5">
+          <v-list class="d-flex flex-wrap justify-space-between bg-background">
             <v-list-item
               v-for="(product, index) in financeProducts"
               :key="index"
@@ -26,9 +26,9 @@
       </div>
 
       <div class="d-flex flex-column align-center mb-10">
-        <p class="text-h6 mb-4">Optimize Your Logistics</p>
+        <p class="text-h6 mb-4 text-accent">Optimize Your Logistics</p>
 
-        <v-list class="d-flex flex-wrap justify-space-between">
+        <v-list class="d-flex flex-wrap justify-space-between bg-background">
           <v-list-item
             v-for="(product, index) in supplyChainProducts"
             :key="index"
@@ -45,8 +45,8 @@
       </div>
 
       <div class="d-flex flex-column align-center mb-10">
-        <p class="text-h6 mb-4">Improve Manufacturing Efficiency</p>
-        <v-list class="d-flex flex-wrap justify-space-between">
+        <p class="text-h6 mb-4 text-accent">Improve Manufacturing Efficiency</p>
+        <v-list class="d-flex flex-wrap justify-space-between bg-background">
           <v-list-item
             v-for="(product, index) in manufacturingProducts"
             :key="index"
@@ -63,8 +63,8 @@
       </div>
 
       <div class="d-flex flex-column align-center mb-10">
-        <h3 class="text-h6 mb-4">Boost Sales Productivity</h3>
-        <v-list class="d-flex flex-wrap justify-space-between">
+        <p class="text-h6 mb-4 text-accent">Boost Sales Productivity</p>
+        <v-list class="d-flex flex-wrap justify-space-between bg-background">
           <v-list-item
             v-for="(product, index) in salesProducts"
             :key="index"
@@ -81,8 +81,8 @@
       </div>
 
       <div class="d-flex flex-column align-center mb-10">
-        <h3 class="text-h5 mb-4">Streamline HR Operations</h3>
-        <v-list class="d-flex flex-wrap justify-space-between">
+        <p class="text-h6 mb-4 text-accent">Streamline HR Operations</p>
+        <v-list class="d-flex flex-wrap justify-space-between bg-background">
           <v-list-item
             v-for="(product, index) in hrProducts"
             :key="index"
