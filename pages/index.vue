@@ -1,6 +1,7 @@
 <template>
   <v-container fluid class="pa-0 bg-grey-lighten-5" >
     <Hero />
+    <Products/>
     <About/>
     <WhyUs/>
     <Testimonials/>
