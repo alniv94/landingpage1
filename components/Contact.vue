@@ -99,14 +99,7 @@ const email = ref("");
 const subject = ref("");
 const message = ref("");
 
-function sendEmail() {
-  // send email code
-}
+
 </script>
 
-<style>
-.v-list-item__content,
-.v-text-field__details {
-  font-size: 14px;
-}
-</style>
+

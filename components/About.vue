@@ -19,14 +19,14 @@
           </h1>
         </v-col>
         <v-col cols="12" sm="6">
-          <p>
-            Apollo System provides customizable and user-friendly ERP software
+          <p class="">
+           Apollo System  provides <strong class="text-accent">customizable and user-friendly</strong>  ERP software
             solutions that streamline business operations and help organizations
-            achieve their goals. With flexible and scalable solutions, we help
+            achieve their goals. With <strong class="text-accent">flexible and scalable solutions,</strong>  we help
             companies grow their operations. Our commitment to excellence and
             innovation is evidenced by numerous industry awards. Join businesses
-            who partner with Apollo System to optimize processes, reduce costs,
-            and increase productivity.
+            who partner with Apollo System to <strong class="text-accent">optimize processes, reduce costs,</strong> 
+            and <strong class="text-accent">increase productivity.</strong> 
           </p>
         </v-col>
       </v-row>

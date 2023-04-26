@@ -1,6 +1,6 @@
 <template>
   
-  <v-container>
+  <v-container >
     <h1 class="text-center my-10 text-accent">What Our Clients Say</h1>
     <v-carousel hide-delimiters show-arrows="hover" cycle>
       <v-carousel-item v-for="(chunk, index) in chunkedTestimonials" :key="index">

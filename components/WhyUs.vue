@@ -1,20 +1,25 @@
 <template>
-  <v-container v-motion
-            :initial="{
-            opacity: 0,
-            y: 100,
-            }"
-            :visible="{
-            opacity: 1,
-            y: 0,
-            }">
+  <v-container
+    v-motion
+    :initial="{
+      opacity: 0,
+      y: 100,
+    }"
+    :visible="{
+      opacity: 1,
+      y: 0,
+    }"
+  >
     <p class="text-center pa-5 mb-10 text-accent text-h4">
       Why us Apollo Systems Enterprise Resource Planning (ERP)?
     </p>
     <v-card flat class="bg-grey-lighten-5">
       <v-toolbar class="w-100">
-        <v-tabs v-model="tab" class="d-flex justify-space-between w-100 ">
-          <v-tab v-for="item in items" class="w-33 font-weight-bold text-accent">
+        <v-tabs v-model="tab" class="d-flex justify-space-between w-100">
+          <v-tab
+            v-for="item in items"
+            class="w-33 font-weight-bold text-accent"
+          >
             {{ item.title }}
           </v-tab>
         </v-tabs>
@@ -24,7 +29,9 @@
         <v-window-item v-for="(item, index) in items" :key="index">
           <v-row>
             <v-col cols="12" md="6" class="pa-10">
-              <span class="text-h5 ma-2 text-justify font-weight-bold">{{ item.content }}</span>
+              <span class="text-h5 ma-2 text-justify font-weight-bold">{{
+                item.content
+              }}</span>
               <v-list class="bg-grey-lighten-5">
                 <v-list-item
                   v-for="(listItem, index) in item.subcontent"
@@ -37,9 +44,8 @@
             </v-col>
             <v-col cols="12" md="6" class="hidden-sm-and-down">
               <div class="d-flex justify-center align-center mt-5 rounded-lg">
-                <v-img :src="item.image" height="300" ></v-img>
+                <v-img :src="item.image" height="300"></v-img>
               </div>
-              
             </v-col>
           </v-row>
         </v-window-item>
@@ -49,8 +55,6 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-
 const tab = ref(null);
 const items = [
   {
