@@ -1,39 +1,24 @@
 <template>
-  <v-container   v-motion
-            :initial="{
-            opacity: 0,
-            y: 100,
-            }"
-            :visible="{
-            opacity: 1,
-            y: 0,
-            }">
+  <v-container>
     <h1 class="text-center my-10 text-accent">What Our Clients Say</h1>
-    <v-carousel hide-delimiters show-arrows="hover" cycle >
-      <v-carousel-item
-        v-for="(testimonial, index) in testimonials"
-        :key="index"
-
-      >
-        <v-card >
-          <v-card-text>
-            <v-icon size="large" color="accent"
-              >mdi-format-quote-open-outline</v-icon
-            >
-            <p class="text--primary d-inline pa-3">{{ testimonial.quote }}</p>
-            <v-icon size="large" color="accent"
-              >mdi-format-quote-close-outline</v-icon
-            >
-            <div class="d-flex flex-column justify-center align-center ma-5">
-              <v-avatar :image="testimonial.image" size="80"></v-avatar>
-              <p class="text-accent">{{ testimonial.author }}</p>
-            </div>
-          </v-card-text>
-        </v-card>
-        
-        
+    <v-carousel hide-delimiters show-arrows="hover" cycle>
+      <v-carousel-item v-for="(chunk, index) in chunkedTestimonials" :key="index">
+        <v-row>
+          <v-col v-for="(testimonial, i) in chunk" :key="i">
+            <v-card width="350" height="400">
+              <v-card-text>
+                <v-icon size="large" color="accent">mdi-format-quote-open-outline</v-icon>
+                <p class="text--primary d-inline pa-3">{{ testimonial.quote }}</p>
+                <v-icon size="large" color="accent">mdi-format-quote-close-outline</v-icon>
+                <div class="d-flex flex-column justify-center align-center ma-5">
+                  <v-avatar :src="testimonial.image" size="80"></v-avatar>
+                  <p class="text-accent">{{ testimonial.author }}</p>
+                </div>
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
       </v-carousel-item>
-    
     </v-carousel>
   </v-container>
 </template>
@@ -41,22 +26,52 @@
 <script setup>
 const testimonials = [
   {
-    quote:
-      "Since implementing the ERP software provided by Apollo System, our operations have become much more streamlined and efficient. We can now track inventory, manage orders, and handle accounting tasks all in one place, which has saved us a lot of time and resources. What I appreciate most about Apollo System is their commitment to customer service. Whenever we have had questions or encountered issues, their support team has been there to help us find solutions quickly and effectively. Overall, I would highly recommend Apollo System to any business looking to improve their operations and increase their productivity.",
+    quote: "card1",
     author: "John Doe, CEO of ABC Corp",
     image: "./images/testimonial.avif",
   },
   {
-    quote:
-      "The support from the Apollo System team has been exceptional, with quick and effective responses to any issues we encounter. Their expertise and professionalism are top-notch, and they consistently go above and beyond to provide us with the support we need. Their ability to explain complex concepts in an easy-to-understand manner has been invaluable, and we highly recommend them to anyone in need of a reliable, knowledgeable, and responsive team of experts. We are grateful for their ongoing partnership and their instrumental role in our success.",
+    quote: "card2",
     author: "Jane Smith, CFO of XYZ Corp",
     image: "",
   },
   {
-    quote:
-      "Since Our decision to implement the ERP solution from Apollo System has had a transformative impact on our business. With their innovative software, we have seen a significant increase in our productivity and efficiency, enabling us to streamline our operations and achieve more in less time. We have been particularly impressed by the level of customization and flexibility offered by the system, which has allowed us to tailor the solution to our unique needs and requirements. We are extremely satisfied with the results we have achieved with the help of Apollo System and highly recommend their services to any organization looking to optimize their processes and achieve greater success. the ERP solution from Apollo System, we have seen a significant increase in our productivity and efficiency. We highly recommend their services.",
+    quote: "card3",
     author: "Bob Johnson, COO of 123 Corp",
     image: "",
   },
+  {
+    quote: "card4",
+    author: "Mary Johnson, COO of 456 Corp",
+    image: "",
+  },
+  {
+    quote: "card5",
+    author: "Alex Lee, CTO of 789 Corp",
+    image: "",
+  },
+  {
+    quote: "card6",
+    author: "Grace Chen, CMO of ABCD Corp",
+    image: "",
+  },
+  {
+    quote: "card7",
+    author: "asdasds Chen, CMO of ABCD Corp",
+    image: "",
+  },
 ];
+
+// Splitting the testimonials array into chunks of three
+const chunkedTestimonials = testimonials.reduce((resultArray, item, index) => {
+  const chunkIndex = Math.floor(index / 3);
+
+  if (!resultArray[chunkIndex]) {
+    resultArray[chunkIndex] = [];
+  }
+
+  resultArray[chunkIndex].push(item);
+
+  return resultArray;
+}, []);
 </script>
