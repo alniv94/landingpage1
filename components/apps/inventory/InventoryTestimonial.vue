@@ -1,5 +1,5 @@
 <template>
-  <v-container class="bg-blue-lighten-5" fluid>
+  <v-container class="bg-tertiary" fluid>
     <v-row justify="space-evenly" class="ma-15">
       <v-col class="">
         <p class="text-h4 text-accent py-5 font-weight-bold">
