@@ -65,24 +65,26 @@
 </template>
 
 <script setup>
+
+// accordion data array
 const items = [
   {
-    title: "What is Inventory ERP?",
-    text: " Inventory ERP is a comprehensive inventory management solution that helps businesses optimize their inventory processes and streamline their operations. The system offers a suite of features, including real-time inventory tracking, item movement monitoring, and stock optimization tools, designed to increase efficiency and reduce costs.",
+    title: "What is Accounting ERP?",
+    text: " Accounting ERP is a comprehensive accounting software solution designed to help businesses streamline their financial processes and manage their finances more efficiently. The system offers a range of features, including accounts payable and receivable, general ledger management, financial reporting, and payroll management.",
   },
   {
-    title: "What features does Inventory ERP offer?",
-    text: " Inventory ERP offers a wide range of features to help businesses manage their inventory more effectively. These features include real-time inventory tracking, which provides businesses with accurate, up-to-date information about their inventory levels. Item movement monitoring allows businesses to track the movement of inventory items throughout their supply chain, while stock optimization tools help businesses optimize their inventory levels to reduce the amount of excess stock they keep on hand. The system also offers multi-location support, which allows businesses to manage inventory across multiple warehouses easily. Finally, Inventory ERP includes built-in barcode scanning functionality, which ensures quick and accurate item tracking, reducing errors and improving productivity.",
-  },
-  {
-    title:
-      "Can Inventory ERP be customized to meet my business's specific needs?",
-    text: "Yes, Inventory ERP can be customized to meet the specific needs of your business. Our team works closely with each customer to understand their unique requirements and tailor the system accordingly. We can customize the system's features and functionality to ensure that it meets your specific needs, whether you're a small business or a large enterprise.",
+    title: "What features does Accounting ERP offer?",
+    text: " Accounting ERP offers a wide range of features designed to help businesses manage their finances more effectively. These features include accounts payable and receivable management, which allows businesses to manage their bills and invoices in one place. The system also offers general ledger management, which enables businesses to track their financial transactions and generate accurate financial reports. Additionally, the system includes payroll management functionality, which allows businesses to manage employee payroll and benefits. Finally, Accounting ERP offers a range of financial reporting tools, including cash flow statements, balance sheets, and income statements, designed to help businesses make informed financial decisions.",
   },
   {
     title:
-      "How can Inventory ERP help my business save money?",
-    text: "Inventory ERP can help businesses save money in several ways. First, by optimizing inventory levels, businesses can reduce the amount of excess stock they keep on hand, which helps to minimize storage costs. Second, by providing real-time inventory tracking, businesses can quickly respond to changes in demand or unexpected stockouts, which can help to reduce the risk of lost sales and additional expenses. Finally, the system's built-in barcode scanning functionality helps to reduce errors and increase efficiency, which can save businesses time and money.",
+      "How can Accounting ERP help my business save money?",
+    text: "Accounting ERP can help businesses save money in several ways. First, by streamlining financial processes, businesses can reduce the amount of time and resources they spend on manual accounting tasks. Second, by providing accurate financial reporting, businesses can make informed financial decisions that can help to reduce costs and increase profitability. Finally, by automating payroll and other financial processes, businesses can reduce the risk of errors and ensure compliance with relevant regulations, which can save them time and money.",
+  },
+  {
+    title:
+      "How secure is my data with Accounting ERP?",
+    text: " Accounting ERP takes data security very seriously and employs a range of measures to protect customer data. Our system is hosted on secure servers and all data is encrypted to ensure maximum protection. We also follow best practices when it comes to data security, including regular backups, user access controls, and data redundancy.",
   },
 ];
 </script>

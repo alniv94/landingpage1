@@ -1,6 +1,6 @@
 <template>
-  <v-container
-    class="mb-5"
+  <section class="bg-tertiary py-10">
+    <v-container
     v-motion
     :initial="{
       opacity: 0,
@@ -12,7 +12,7 @@
     }"
   >
     <div>
-      <p class="text-accent text-h4 mb-5">Contact Us</p>
+      <p class="text-accent text-h4 mb-5 font-weight-bold">Connect With Us</p>
     </div>
 
     <iframe
@@ -27,7 +27,7 @@
 
     <v-row class="mt-5">
       <v-col cols="12" md="4">
-        <v-list class="bg-grey-lighten-5">
+        <v-list class="bg-tertiary">
           <v-list-item>
             <v-list-item-title class="text-accent font-weight-bold py-5">
               Location
@@ -59,13 +59,13 @@
         <v-form>
           <div class="d-flex">
             <v-text-field
-              v-model="name"
+              
               label="Name"
               required
               variant="outlined"
             ></v-text-field>
             <v-text-field
-              v-model="email"
+              
               label="Email"
               required
               variant="outlined"
@@ -73,33 +73,32 @@
           </div>
 
           <v-text-field
-            v-model="subject"
+         
             label="Subject"
             required
             variant="outlined"
           ></v-text-field>
           <v-textarea
-            v-model="message"
+            
             label="Message"
             required
             variant="outlined"
           ></v-textarea>
-          <v-btn color="secondary" class="mr-4" @click="sendEmail">
+          <v-btn color="secondary" class="mr-4" >
             Send
           </v-btn>
         </v-form>
       </v-col>
     </v-row>
   </v-container>
+  </section>
+  
 </template>
 
 <script setup>
-const name = ref("");
-const email = ref("");
-const subject = ref("");
-const message = ref("");
-
 
 </script>
 
+<style scoped>
 
+</style>

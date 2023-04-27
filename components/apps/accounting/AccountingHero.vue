@@ -15,7 +15,7 @@
           Maximize your financial potential with our accounting management
           services and stay ahead of the competition.
         </p>
-        <v-list class="bg-grey-lighten-5">
+        <v-list class="bg-background">
           <v-list-item v-for="list in lists">
             <Icon
               name="material-symbols:check"

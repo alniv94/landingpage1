@@ -1,6 +1,5 @@
 <template>
   <v-container
-   
     v-motion
     :initial="{
       opacity: 0,
@@ -11,42 +10,47 @@
       y: 0,
     }"
   >
-    <p class="text-center pa-5 mb-10 text-accent text-h4">
-      Why us Apollo Systems Enterprise Resource Planning (ERP)?
-    </p>
-    <v-card flat class="bg-grey-lighten-5">
-      <v-toolbar class="w-100">
-        <v-tabs v-model="tab" class="d-flex justify-space-between w-100">
-          <v-tab
-            v-for="item in items"
-            class="w-33 font-weight-bold text-accent"
-          >
-            {{ item.title }}
-          </v-tab>
-        </v-tabs>
-      </v-toolbar>
+    <div>
+      <p class="text-center pa-5 mb-10 text-accent text-h4">
+        Why Apollo Systems Enterprise Resource Planning (ERP)?
+      </p>
+    </div>
+
+    <v-card flat class="bg-background">
+      <v-tabs v-model="tab" class="d-flex justify-space-between" grow>
+        <v-tab v-for="item in items" class="font-weight-bold text-accent">
+          {{ item.title }}
+        </v-tab>
+      </v-tabs>
 
       <v-window v-model="tab">
         <v-window-item v-for="(item, index) in items" :key="index">
           <v-row>
             <v-col cols="12" md="6" class="pa-10">
-              <span class="text-h5 ma-2 text-justify font-weight-bold">{{
-                item.content
-              }}</span>
-              <v-list class="bg-grey-lighten-5">
+              <span
+                class="text-h5 ma-2 text-justify font-weight-bold text-accent"
+              >
+                {{ item.content }}
+              </span>
+              <v-list class="bg-background">
                 <v-list-item
                   v-for="(listItem, index) in item.subcontent"
                   :key="index"
-                  class="pa-3"
+                 
                 >
-                  {{ listItem }}
+                <Icon name="material-symbols:check"
+              size="1.5em"
+              class="text-secondary"
+            />
+                <p class="pa-3 text-accent d-inline">{{ listItem }}</p>
+                  
                 </v-list-item>
               </v-list>
             </v-col>
-            <v-col cols="12" md="6" class="hidden-sm-and-down">
-              <div class="d-flex justify-center align-center mt-5 rounded-lg">
-                <v-img :src="item.image" height="300"></v-img>
-              </div>
+            <v-col cols="12" md="6" class="hidden-sm-and-down d-flex justify-center align-center">
+             
+                <v-img :src="item.image" height="300" class="rounded-lg"></v-img>
+           
             </v-col>
           </v-row>
         </v-window-item>
@@ -70,7 +74,7 @@ const items = [
       list3:
         "Enhanced financial visibility - Our ERP solutions provide powerful financial reporting and analytics capabilities, enabling you to gain a deeper understanding of your financial performance and identify areas where you can reduce costs and increase profitability.",
     },
-    image: "./images/save-money.png",
+    image: "./images/save-money.jpg",
   },
   {
     title: "Save Time",

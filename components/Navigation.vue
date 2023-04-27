@@ -4,8 +4,8 @@
       <v-row>
         <v-col cols="12" sm="6">
           <div class="d-flex justify-spae-between ma-auto">
-            <v-app-bar-title class="text-white pa-5 text-decoration-none" 
-              > <NuxtLink to="/"> app</NuxtLink>   </v-app-bar-title
+            <v-app-bar-title class="text-white pa-5 " 
+              > <NuxtLink to="/" class="text-decoration-none text-white"> Apollo System</NuxtLink>   </v-app-bar-title
             >
             <template v-if="isMobile">
               <v-icon

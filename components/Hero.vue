@@ -1,6 +1,6 @@
 <template>
   <v-container
-    class="px-15 bg-primary h-screen fill-height align-content-center"
+    class="px-15 bg-primary h-screen fill-height align-content-center banner"
     fluid
   >
     <v-row class="d-flex justify-center align-center">
@@ -45,7 +45,7 @@
           </v-dialog>
         </v-btn>
 
-        <v-img src="../images/logo.png" width="400" >
+        <v-img src="../images/logo.png" width="300" >
         </v-img>
       </v-col>
     </v-row>
@@ -57,6 +57,11 @@ const dialog = ref(false);
 </script>
 
 <style scoped>
+.banner{
+  border-bottom-left-radius: 40%;
+  
+}
+
 .play-btn {
   position: absolute;
   top: 50%;

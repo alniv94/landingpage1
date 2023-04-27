@@ -1,5 +1,6 @@
 <template>
-  <v-container class="my-15 " >
+  <section class="bg-light-blue-lighten-5">
+    <v-container class="py-15 " >
     <div
       v-motion
       :initial="{
@@ -19,7 +20,7 @@
           </h1>
         </v-col>
         <v-col cols="12" sm="6">
-          <p class="">
+          <p style="line-height: 1.5;">
            Apollo System  provides <strong class="text-accent">customizable and user-friendly</strong>  ERP software
             solutions that streamline business operations and help organizations
             achieve their goals. With <strong class="text-accent">flexible and scalable solutions,</strong>  we help
@@ -33,4 +34,6 @@
       <v-btn color="warning" class="white--text mx-auto">Learn More</v-btn>
     </div>
   </v-container>
+  </section>
+
 </template>
