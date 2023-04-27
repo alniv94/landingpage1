@@ -169,8 +169,8 @@ const hrProducts = [
     icon: "mdi-account-circle",
   },
   {
-    title: "Payroll Management",
-    icon: "mdi-cash-multiple",
+    title: "Recruitment",
+    icon: "ic:sharp-person-search",
   },
   {
     title: "Benefits Administration",

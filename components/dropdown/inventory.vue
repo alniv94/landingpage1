@@ -2,7 +2,7 @@
 
    <v-list class="ma-3">
      <v-list-subheader>
-       <span class="text-h6">Inventory</span>
+       <span class="text-h6 text-light-blue-lighten-1">Inventory</span>
      </v-list-subheader>
      <v-divider></v-divider>
 

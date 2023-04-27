@@ -1,23 +1,21 @@
 <template>
-    
-      <v-list class="ma-3">
-        <v-list-subheader>
-          <span class="text-h6">Finance</span>
-        </v-list-subheader>
-        <v-divider></v-divider>
+  <v-list class="ma-3">
+    <v-list-subheader>
+      <span class="text-h6 text-pink-lighten-1">Finance</span>
+    </v-list-subheader>
+    <v-divider></v-divider>
 
-        <v-list-item
-          v-for="(finance, i) in finances"
-          :key="i"
-          link
-          :to="finance.link"
-        >
-          <v-list-item-title link>
-            {{ finance.title }}
-          </v-list-item-title>
-        </v-list-item>
-      </v-list>
-    
+    <v-list-item
+      v-for="(finance, i) in finances"
+      :key="i"
+      link
+      :to="finance.link"
+    >
+      <v-list-item-title link>
+        {{ finance.title }}
+      </v-list-item-title>
+    </v-list-item>
+  </v-list>
 </template>
 
 <script setup>

@@ -2,7 +2,7 @@
     
       <v-list class="ma-3">
         <v-list-subheader>
-          <span class="text-h6">Human Resources</span>
+          <span class="text-h6 text-purple-lighten-1">Human Resources</span>
         </v-list-subheader>
         <v-divider></v-divider>
 
