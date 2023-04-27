@@ -6,7 +6,7 @@
         <v-btn
           v-for="icon in icons"
           :key="icon"
-          class="mx-4"
+          class="mx-2"
           :icon="icon"
           variant="text"
         ></v-btn>

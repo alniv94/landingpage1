@@ -27,7 +27,7 @@
       </div>
 
       <div class="d-flex flex-column align-center mb-10">
-        <p class="text-h6 mb-4 text-accent">Optimize Your Logistics</p>
+        <p class="text-h6 mb-4 text-accent">Logistics and Manafacturing Operation</p>
 
         <v-list class="d-flex flex-wrap justify-space-between bg-background">
           <v-list-item
@@ -46,7 +46,7 @@
       </div>
 
       <div class="d-flex flex-column align-center mb-10">
-        <p class="text-h6 mb-4 text-accent">Improve Manufacturing Efficiency</p>
+        <p class="text-h6 mb-4 text-accent">Build Website</p>
         <v-list class="d-flex flex-wrap justify-space-between bg-background">
           <v-list-item
             v-for="(product, index) in manufacturingProducts"
@@ -123,7 +123,7 @@ const financeProducts = [
 
 const supplyChainProducts = [
   {
-    title: "Purchasing",
+    title: "Logistics",
     icon: "iconoir:delivery-truck",
     link: "/apps/expenses",
   },
@@ -132,24 +132,21 @@ const supplyChainProducts = [
     icon: "streamline-emojis:package",
   },
   {
-    title: "Logistics",
-    icon: "twemoji:shopping-cart",
+    title: "Production Control",
+    icon: "ph:factory",
   },
 ];
 
 const manufacturingProducts = [
   {
-    title: "Inventory",
-    icon: "icon-park:align-text-both-one",
+    title: "Website",
+    icon: "mdi:web",
   },
   {
-    title: "Task Management",
-    icon: "openmoji:hammer-and-wrench",
+    title: "Ecommerce",
+    icon: "twemoji:shopping-cart",
   },
-  {
-    title: "Production Control",
-    icon: "ph:factory",
-  },
+
 ];
 const salesProducts = [
   {

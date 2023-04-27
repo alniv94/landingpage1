@@ -41,11 +41,13 @@
     temporary
   >
     <!--Dropdown Menu-->
-    <div class="d-flex justify-space-around flex-lg-row flex-column">
+    <div class="d-flex justify-space-between flex-lg-row flex-column">
       <Finance />
+      <Inventory />
+      <Website/>
       <Sale />
       <HumanResource />
-      <Inventory />
+      
     </div>
   </v-navigation-drawer>
 </template>
