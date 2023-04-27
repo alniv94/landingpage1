@@ -1,5 +1,5 @@
 <template>
-  <v-container class="my-15 ">
+  <v-container class="my-15 " >
     <div
       v-motion
       :initial="{
@@ -11,8 +11,8 @@
         y: 0,
       }"
     >
-      <span class="py-5 text-accent text-h4"> Who We Are</span>
-      <v-row>
+      <span class="py-5 text-accent text-h4 "> Who We Are</span>
+      <v-row class="mt-4">
         <v-col cols="12" sm="6">
           <h1>
             Empowering businesses to succeed through innovative ERP solutions.

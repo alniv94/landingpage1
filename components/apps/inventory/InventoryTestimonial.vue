@@ -20,7 +20,7 @@
           size="2em"
           class="text-secondary"
         />
-        <p class="text-accent py-12 d-inline">
+        <p class="text-accent py-12 d-inline font-italic text-body-1">
           The automated invoicing and payment processing features of the
           accounting management ERP have been a game changer for our business.
           It has significantly improved our cash flow management and saved us

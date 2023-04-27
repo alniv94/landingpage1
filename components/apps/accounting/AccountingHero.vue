@@ -6,9 +6,7 @@
           width="550"
           class="rounded-lg"
         ></v-img>
-        <v-btn size="large" class="my-5 bg-secondary w-50 text-capitalize"
-          >Start Demo</v-btn
-        >
+        
       </div>
       <div class="px-4">
         <p class="text-h6 text-accent">Product</p>

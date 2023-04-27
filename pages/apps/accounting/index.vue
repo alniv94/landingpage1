@@ -1,12 +1,13 @@
 <template>
-  <v-container class="bg-grey-lighten-5" fluid>
+  <v-container class="bg-background ma-0 pa-0" fluid>
     <!-- Hero -->
     <AccountingHero />
+    
+    <!-- Testimoial -->
+    <AccountingTestimonial />
 
     <!-- Features  -->
     <AccountingFeatures />
 
-    <!-- Testimoial -->
-    <AccountingTestimonial />
   </v-container>
 </template>
