@@ -6,13 +6,13 @@
       <v-carousel-item v-for="(chunk, index) in chunkedTestimonials" :key="index">
         <v-row>
           <v-col v-for="(testimonial, i) in chunk" :key="i" class="d-flex">
-            <v-card class="mx-auto" max-width="400">
+            <v-card class="mx-auto" max-width="350">
               <v-card-text>
                 <v-icon size="large" color="accent">mdi-format-quote-open-outline</v-icon>
                 <p class="text--primary d-inline pa-3">{{ testimonial.quote }}</p>
                 <v-icon size="large" color="accent">mdi-format-quote-close-outline</v-icon>
                 <div class="d-flex flex-column justify-center align-center mt-5">
-                  <v-avatar :image="testimonial.image" size="70"></v-avatar>
+                  <v-avatar :image="testimonial.image" size="80"></v-avatar>
                   <p class="text-accent mt-3">{{ testimonial.author }}</p>
                 </div>
               </v-card-text>
@@ -57,14 +57,10 @@ const testimonials = [
     author: "Grace Chen, CMO of ABCD Corp",
     image: "./images/test1.jpg",
   },
-  {
-    quote: "card7",
-    author: "asdasds Chen, CMO of ABCD Corp",
-    image: "./images/test1.jpg",
-  },
+
 ];
 
-// Splitting the testimonials array into chunks of three
+
 const chunkedTestimonials = testimonials.reduce((resultArray, item, index) => {
   const chunkIndex = Math.floor(index / 3);
 

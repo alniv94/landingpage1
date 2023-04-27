@@ -27,7 +27,9 @@
       </div>
 
       <div class="d-flex flex-column align-center mb-10">
-        <p class="text-h6 mb-4 text-accent">Logistics and Manafacturing Operation</p>
+        <p class="text-h6 mb-4 text-accent">
+          Logistics and Manafacturing Operation
+        </p>
 
         <v-list class="d-flex flex-wrap justify-space-between bg-background">
           <v-list-item
@@ -146,7 +148,6 @@ const manufacturingProducts = [
     title: "Ecommerce",
     icon: "twemoji:shopping-cart",
   },
-
 ];
 const salesProducts = [
   {

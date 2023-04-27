@@ -18,19 +18,19 @@
 <script setup> 
 const inventories = [
 {
- title: "Inventory",
+ title: "Logistics",
  value: 1,
+ link: "/apps/logistics",
+},
+{
+ title: "Inventory",
+ value: 2,
  link: "/apps/inventory",
 },
 {
- title: "Manufacturing",
- value: 2,
- link: "/apps/manufacturing",
-},
-{
- title: "Purchase",
+ title: "Production Control",
  value: 3,
- link: "/apps/purchase",
+ link: "/apps/production-control",
 },
 ];
 </script>
