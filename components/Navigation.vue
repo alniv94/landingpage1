@@ -1,12 +1,14 @@
 <template>
   <v-container class="pl-15">
-    <v-app-bar class="bg-primary" flat>
+    <v-app-bar class="bg-primary" elevation="0">
       <v-row>
         <v-col cols="12" sm="6">
           <div class="d-flex justify-spae-between ma-auto">
-            <v-app-bar-title class="text-white pa-5 " 
-              > <NuxtLink to="/" class="text-decoration-none text-white"> Apollo System</NuxtLink>   </v-app-bar-title
-            >
+            <v-app-bar-title class="text-white pa-5">
+              <NuxtLink to="/" class="text-decoration-none text-white">
+                Apollo System</NuxtLink
+              >
+            </v-app-bar-title>
             <template v-if="isMobile">
               <v-icon
                 @click="drawer = !drawer"
@@ -44,10 +46,9 @@
     <div class="d-flex justify-space-between flex-lg-row flex-column">
       <Finance />
       <Inventory />
-      <Website/>
+      <Website />
       <Sale />
       <HumanResource />
-      
     </div>
   </v-navigation-drawer>
 </template>

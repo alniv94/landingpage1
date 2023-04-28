@@ -1,6 +1,6 @@
 <template>
   <v-container
-    class="px-15 bg-primary h-screen fill-height align-content-center banner"
+    class="px-15  fill-height h-screen align-content-center banner"
     fluid
   >
     <v-row class="d-flex justify-center align-center">
@@ -23,7 +23,7 @@
           </p>
         </div>
       </v-col>
-      <v-col cols="12" sm="5" lg="6" class="hidden-sm-and-down position-relative d-flex">
+      <v-col cols="12" sm="5" lg="6" class="hidden-md-and-down position-relative d-flex">
         <v-btn
           class="rounded-circle play-btn"
           elevation="4"
@@ -45,7 +45,7 @@
           </v-dialog>
         </v-btn>
 
-        <v-img src="../images/logo.png" width="300" >
+        <v-img src="../images/hero1.png"  >
         </v-img>
       </v-col>
     </v-row>
@@ -58,13 +58,18 @@ const dialog = ref(false);
 
 <style scoped>
 .banner{
-  border-bottom-left-radius: 40%;
+  background-image: url(../images/logo1.svg) ;
+/* background-size: 1423px 720px; */
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+
   
 }
 
 .play-btn {
   position: absolute;
-  top: 50%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;

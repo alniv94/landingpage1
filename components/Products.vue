@@ -5,9 +5,9 @@
     </p>
 
     <div
-      class="d-flex flex-wrap justify-lg-space-between flex-lg-row flex-sm-column justify-sm-center align-sm-center"
+      class="d-flex flex-wrap justify-lg-space-between flex-lg-row flex-sm-column align-lg-center justify-sm-center align-sm-center"
     >
-      <div class="d-flex flex-column align-center mb-10">
+      <div class="d-flex flex-column align-center mb-10 mx-2">
         <p class="text-h6 mb-4 text-accent">Manage Your Finances</p>
 
         <v-list class="d-flex flex-wrap justify-space-between bg-background">
@@ -26,7 +26,7 @@
         </v-list>
       </div>
 
-      <div class="d-flex flex-column align-center mb-10">
+      <div class="d-flex flex-column align-center mb-10 mx-2">
         <p class="text-h6 mb-4 text-accent">
           Logistics and Manafacturing Operation
         </p>
@@ -47,7 +47,7 @@
         </v-list>
       </div>
 
-      <div class="d-flex flex-column align-center mb-10">
+      <div class="d-flex flex-column align-center mb-10 mx-2">
         <p class="text-h6 mb-4 text-accent">Build Website</p>
         <v-list class="d-flex flex-wrap justify-space-between bg-background">
           <v-list-item
@@ -65,7 +65,7 @@
         </v-list>
       </div>
 
-      <div class="d-flex flex-column align-center mb-10">
+      <div class="d-flex flex-column align-center mb-10 mx-2">
         <p class="text-h6 mb-4 text-accent">Boost Sales Productivity</p>
         <v-list class="d-flex flex-wrap justify-space-between bg-background">
           <v-list-item
@@ -127,15 +127,17 @@ const supplyChainProducts = [
   {
     title: "Logistics",
     icon: "iconoir:delivery-truck",
-    link: "/apps/expenses",
+    link: "/apps/logistics",
   },
   {
     title: "Inventory ",
     icon: "streamline-emojis:package",
+    link: "/apps/inventory",
   },
   {
     title: "Production Control",
     icon: "ph:factory",
+    link: "/apps/production-control",
   },
 ];
 
@@ -143,24 +145,29 @@ const manufacturingProducts = [
   {
     title: "Website",
     icon: "mdi:web",
+    link: "/apps/website",
   },
   {
     title: "Ecommerce",
     icon: "twemoji:shopping-cart",
+    link: "/apps/ecommerce",
   },
 ];
 const salesProducts = [
   {
     title: "POS",
     icon: "mdi-cart-arrow-down",
+    link: "/apps/pos",
   },
   {
     title: "CRM",
     icon: "mdi-account-group",
+    link: "/apps/crm",
   },
   {
-    title: "Sales Forecasting",
+    title: "Sales",
     icon: "mdi-chart-areaspline",
+    link: "/apps/sales",
   },
 ];
 
@@ -168,14 +175,17 @@ const hrProducts = [
   {
     title: "Employee Records",
     icon: "mdi-account-circle",
+    link: "/apps/employee",
   },
   {
     title: "Recruitment",
     icon: "ic:sharp-person-search",
+    link: "/apps/recruitment",
   },
   {
     title: "Benefits Administration",
     icon: "mdi-heart-outline",
+    link: "/apps/administration",
   },
 ];
 </script>
