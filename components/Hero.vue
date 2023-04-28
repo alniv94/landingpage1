@@ -23,7 +23,7 @@
           </p>
         </div>
       </v-col>
-      <v-col cols="12" sm="5" lg="6" class="hidden-md-and-down position-relative d-flex">
+      <v-col cols="12" sm="5" lg="6" class="hidden-sm-and-up position-relative d-flex">
         <v-btn
           class="rounded-circle play-btn"
           elevation="4"

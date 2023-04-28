@@ -1,7 +1,8 @@
 <template>
- 
-  <v-container >
-    <p class="text-center text-h4 font-weight-bold my-10 text-accent ">What Our Clients Say</p>
+  <v-container>
+    <p class="text-center text-h4 font-weight-bold my-10 text-accent">
+      What Our Clients Say
+    </p>
     <v-carousel hide-delimiters show-arrows="hover">
       <v-carousel-item
         v-for="(chunk, index) in chunkedTestimonials"
@@ -10,15 +11,19 @@
         <v-row>
           <v-col v-for="(testimonial, i) in chunk" :key="i" class="d-flex">
             <v-card class="mx-auto" max-width="350" height="400">
-              <v-card-text class="d-flex flex-column justify-space-between h-100 pa-10">
+              <v-card-text
+                class="d-flex flex-column justify-space-between h-100 pa-10"
+              >
                 <div>
                   <v-icon size="large" color="accent"
-                    >mdi-format-quote-open-outline</v-icon>
+                    >mdi-format-quote-open-outline</v-icon
+                  >
                   <p class="text-accent d-inline pa-3">
                     {{ testimonial.quote }}
                   </p>
                   <v-icon size="large" color="accent">
-                    mdi-format-quote-close-outline </v-icon>  
+                    mdi-format-quote-close-outline
+                  </v-icon>
                 </div>
 
                 <div class="d-flex flex-column justify-center align-center">
@@ -31,12 +36,10 @@
         </v-row>
       </v-carousel-item>
     </v-carousel>
-    
   </v-container>
-
 </template>
 
-<script setup>
+<script lang="ts" setup>
 const testimonials = [
   {
     quote:
@@ -76,16 +79,18 @@ const testimonials = [
   },
 ];
 
-const chunkedTestimonials = testimonials.reduce((resultArray, item, index) => {
-  const chunkIndex = Math.floor(index / 3);
+const chunkedTestimonials = testimonials.reduce(
+  (resultArray: Array<Array<any>>, item, index) => {
+    const chunkIndex = Math.floor(index / 3);
 
-  if (!resultArray[chunkIndex]) {
-    resultArray[chunkIndex] = [];
-  }
+    if (!resultArray[chunkIndex]) {
+      resultArray[chunkIndex] = [];
+    }
 
-  resultArray[chunkIndex].push(item);
+    resultArray[chunkIndex].push(item);
 
-  return resultArray;
-}, []);
+    return resultArray;
+  },
+  []
+);
 </script>
-
