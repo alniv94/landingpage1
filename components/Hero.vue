@@ -1,6 +1,6 @@
 <template>
   <v-container
-    class="px-15  fill-height h-screen align-content-center banner"
+    class="px-15 bg-primary fill-height h-screen align-content-center banner"
     fluid
   >
     <v-row class="d-flex justify-center align-center">
@@ -45,7 +45,7 @@
           </v-dialog>
         </v-btn>
 
-        <v-img src="../images/hero1.png"  >
+        <v-img src="../images/hero1.png" height="400" >
         </v-img>
       </v-col>
     </v-row>
@@ -57,15 +57,15 @@ const dialog = ref(false);
 </script>
 
 <style scoped>
-.banner{
+/* .banner{
   background-image: url(../images/logo1.svg) ;
-/* background-size: 1423px 720px; */
+
 background-position: center center;
 background-size: cover;
 background-repeat: no-repeat;
 
-  
-}
+
+} */
 
 .play-btn {
   position: absolute;
