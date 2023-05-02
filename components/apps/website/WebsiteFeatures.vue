@@ -1,89 +1,62 @@
 <template>
-    <v-container class="text-center my-10">
-      <p class="text-h4 text-accent pa-5 mb-4">What Makes Our ERP Stand Out</p>
-      <v-row>
-        <v-col cols="12" md="6" lg="4">
-          <v-card>
-            <v-card-title>
-              <Icon name="material-symbols:bar-chart-rounded" size="1.5em" />
-              <span class="px-1 text-accent">Comprehensive Reporting</span>
-            </v-card-title>
-            <v-card-text>
-              Real-time access to financial data and customizable reports for
-              better decision-making.
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" md="6" lg="4">
-          <v-card>
-            <v-card-title>
-              <Icon name="ph:repeat" size="1.5em" />
-              <span class="px-1 text-accent">Automated Workflows</span>
-            </v-card-title>
-            <v-card-text>
-              Streamlined bookkeeping and accounting processes with automated
-              invoicing and payment processing.
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" md="6" lg="4">
-          <v-card>
-            <v-card-title>
-              <Icon name="material-symbols:lock" size="1.5em" />
-              <span class="px-1 text-accent">Secure Data Storage</span>
-            </v-card-title>
-            <v-card-text>
-              Safe and secure storage of financial data with restricted access for
-              enhanced security.
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" md="6" lg="4">
-          <v-card>
-            <v-card-title>
-              <Icon name="mdi:account-group" size="1.5em" />
-              <span class="px-1 text-accent">Accurate Payroll Management</span>
-            </v-card-title>
-            <v-card-text>
-              Compliance with local laws and regulations with accurate and timely
-              payroll management.
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" md="6" lg="4">
-          <v-card>
-            <v-card-title>
-              <Icon name="mdi:view-dashboard" size="1.5em" />
-  
-              <span class="px-1 text-accent">Customizable Dashboards</span>
-            </v-card-title>
-            <v-card-text>
-              Personalized dashboards and reports with drag-and-drop functionality
-              for easy customization.
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" md="6" lg="4">
-          <v-card>
-            <v-card-title>
-              <Icon name="mdi:cellphone" size="1.5em" />
-  
-              <span class="px-1 text-accent">Mobile Compatibility</span>
-            </v-card-title>
-            <v-card-text>
-              Access financial data and reports on-the-go with mobile
-              compatibility.
-            </v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
+  <v-container class="mb-10">
+    <p class="text-center mb-10 text-h4 font-weight-bold">Our Features</p>
+    <v-row align="start" justify="space-between">
+      <v-col v-for="(feature, index) in features" :key="index" cols="12" md="6" lg="4">
+        <v-card class="mx-auto">
+          <v-card-text class="text-center">
+            <Icon :name="feature.icon" size="3em" />
+            <h3 class="mt-6 text-accent" >{{ feature.title }}</h3>
+            <p class="subtitle-1 mt-3">{{ feature.description }}</p>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>
 
-      
-    </v-container>
-  </template>
-  
-  <style scoped>
-      v-card{
-          margin-bottom: 100px ;    
-          }
-  </style>
+<script setup>
+
+     const features = [
+        {
+          icon: 'mdi-web',
+          title: 'Drag-and-Drop Website Editor',
+          description: 'Create and customize your website design and layout with ease using our user-friendly website editor.'
+        },
+        {
+          icon: 'mdi-view-grid',
+          title: 'Template Library',
+          description: 'Choose from a wide range of customizable website templates to get started quickly and easily.'
+        },
+        {
+          icon: 'mdi-shopping',
+          title: 'E-commerce Integration',
+          description: 'Our website builder ERP offers built-in support for online stores with shopping carts, payment gateways, and order management.'
+        },
+        {
+          icon: 'mdi-web-clock',
+          title: 'Domain Management',
+          description: 'Register and manage your domain names directly from our platform, with easy DNS configuration and domain forwarding.'
+        },
+        {
+          icon: 'mdi-magnify',
+          title: 'SEO Optimization',
+          description: 'Optimize your website for search engines with tools for keyword research, meta tags, and analytics integration.'
+        },
+        {
+          icon: 'mdi-chart-areaspline',
+          title: 'Analytics and Reporting',
+          description: 'Track the performance uilt-in analytics and reporting tools, with detailed insights and reporting dashboards.'
+        }
+      ]
+ 
+</script>
+
+<style>
+
+.subtitle-1 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+</style>

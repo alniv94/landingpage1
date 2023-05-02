@@ -3,11 +3,13 @@
     <!-- Hero -->
     <AccountingHero />
     
+     <!-- Features  -->
+     <AccountingFeatures />
+
     <!-- Testimoial -->
     <AccountingTestimonial />
 
-    <!-- Features  -->
-    <AccountingFeatures />
+   
 
   </v-container>
 </template>

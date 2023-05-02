@@ -4,7 +4,7 @@
       <div class="px-4 d-flex flex-column justify-center">
         <p class="text-h6 text-accent">Create a</p>
         <p class="text-h3 text-accent pb-3 font-weight-bold">Professional Business Website</p>
-        <p class="text-subtitle-1">
+        <p class="text-subtitle-1 text-accent">
           Create a stunning, professional website in minutes with our easy-to-use drag-and-drop builder.
         </p>
         <!-- <v-list class="bg-grey-lighten-5">
@@ -20,16 +20,18 @@
           </v-list-item>
         </v-list> -->
       </div>
+     
 
       <div class="d-flex flex-column justify-center align-center px-5">
         <v-img
-          src="../images/accounting/hero.png"
+          src="../images/herowebsite.png"
           width="550"
           class="rounded-lg"
         ></v-img>
        
       </div>
     </div>
+    
   </v-container>
 </template>
 
@@ -56,12 +58,8 @@ const lists = [
       "Track items quickly and accurately using our built-in barcode scanning functionality",
   },
 ];
+
+
 </script>
 
 
-<style scoped>
-/* .cover{
-  background-image: url('../images/websitehero.png');
-  background-size: contain;
-} */
-</style>

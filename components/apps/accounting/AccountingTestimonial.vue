@@ -8,7 +8,7 @@
             ERP</strong
           >
         </p>
-        <p class="text-body-2 text-accent">
+        <p class="text-body-1 text-accent">
           Streamline your financial management with our accounting management
           ERP. Our system offers advantages such as automated invoicing and
           payment processing, accurate payroll management, customizable
