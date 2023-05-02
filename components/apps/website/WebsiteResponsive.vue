@@ -1,19 +1,19 @@
 <template>
-  
-    <v-container class="mb-10 pb-10 bg-tertiary" fluid>
-        <section class="" >
-        <p class="text-h4 font-weight-bold text-center pa-5">Responsive to any device</p>
-        <p class="text-subtitle-1 text-accent text-center ">Seamless browsing, anytime, anywhere - our website is always responsive to any device!</p>
-      <div class="d-flex justify-space-evenly mt-5">
-        <div v-for="item in items">
-          <Icon :name="item.icon" size="7em"/>
-          <p class="text-center">{{item.caption}}</p>
-        </div>
+  <v-container class="mb-10 pb-10 bg-tertiary" fluid>
+    <p class="text-h4 font-weight-bold text-center pa-5">
+      Responsive to any device
+    </p>
+    <p class="text-subtitle-1 text-accent text-center">
+      Seamless browsing, anytime, anywhere - our website is always responsive to
+      any device!
+    </p>
+    <div class="d-flex justify-space-evenly mt-5">
+      <div v-for="item in items">
+        <Icon :name="item.icon" size="7em" />
+        <p class="text-center">{{ item.caption }}</p>
       </div>
-        
-       
-      </section>
-    </v-container>
+    </div>
+  </v-container>
 </template>
 
 <script setup>
@@ -34,6 +34,5 @@ const items = [
     caption: "Desktop",
     icon: "material-symbols:desktop-mac-outline",
   },
-]
-
+];
 </script>

@@ -84,8 +84,8 @@
             required
             variant="outlined"
           ></v-textarea>
-          <v-btn color="secondary" class="mr-4" >
-            Send
+          <v-btn class="mr-4 bg-accent" size="large">
+            Send Message
           </v-btn>
         </v-form>
       </v-col>

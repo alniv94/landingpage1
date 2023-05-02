@@ -1,4 +1,5 @@
 <template>
+  <v-container>
     <div class="d-flex justify-space-between mt-15 pa-5">
      <div class="d-flex flex-column justify-center align-center px-5">
        <v-img
@@ -6,6 +7,7 @@
          width="550"
          class="rounded-lg"
        ></v-img>
+       
        <v-btn size="large" class="my-5 bg-secondary w-50 text-capitalize"
          >Start Demo</v-btn
        >
@@ -14,7 +16,7 @@
        <p class="text-h6 text-accent">Product</p>
        <p class="text-h3 text-accent pb-3">Inventory Management</p>
        <p class="text-subtitle-1">
-        Optimize your inventory management and streamline operations with our ERP system, which enables easy tracking, monitoring, and stock level management, boosting warehouse productivity.
+        Optimize your inventory management and streamline operations with our ERP system, which enablezs easy tracking, monitoring, and stock level management, boosting warehouse productivity.
        </p>
        <v-list class="bg-grey-lighten-5">
          <v-list-item v-for="list in lists">
@@ -30,6 +32,8 @@
        </v-list>
      </div>
    </div>
+  </v-container>
+   
 </template>
 
 <script setup>

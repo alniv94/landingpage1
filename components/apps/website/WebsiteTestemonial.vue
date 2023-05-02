@@ -3,7 +3,7 @@
       <v-row justify="space-evenly" class="ma-15">
         <v-col class="">
           <p class="text-h4 text-accent py-5 font-weight-bold">
-            What is Apollo Inventory ERP?
+            What is Apollo Website Builder?
           </p>
           <p class="text-body-1 text-accent ">
             Inventory ERP offers businesses a suite of powerful inventory

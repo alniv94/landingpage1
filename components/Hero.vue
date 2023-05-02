@@ -28,10 +28,11 @@
           class="rounded-circle play-btn"
           elevation="4"
           size="x-large"
-          color="green-lighten-3"
+          color="green-lighten-4"
           v-ripple.center
         >
-          <v-icon icon="mdi-play" />
+        <Icon name="mdi-play" size="2em" class="text-accent"/>
+        
           <v-dialog v-model="dialog" activator="parent" width="auto">
             <iframe
               width="1067"

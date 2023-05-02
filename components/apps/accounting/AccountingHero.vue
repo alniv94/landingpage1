@@ -1,14 +1,7 @@
 <template>
-     <div class="d-flex justify-space-between mt-15 pa-5">
-      <div class="d-flex flex-column justify-center align-center px-5">
-        <v-img
-          src="../images/accounting/hero.png"
-          width="550"
-          class="rounded-lg"
-        ></v-img>
-        
-      </div>
-      <div class="px-4">
+  <v-container>
+    <div class="d-flex justify-space-between mt-15 pa-5 ">
+      <div >
         <p class="text-h6 text-accent">Product</p>
         <p class="text-h3 text-accent pb-3">Accounting Management</p>
         <p class="text-subtitle-1">
@@ -28,7 +21,21 @@
           </v-list-item>
         </v-list>
       </div>
+      <div class="d-flex flex-column justify-center align-center px-5">
+        <v-img
+          src="../images/accounting/hero.png"
+          width="550"
+          class="rounded-lg"
+        ></v-img>
+        
+          <v-btn class="bg-primary" size="large">Start Demo</v-btn>
+        
+       
+      </div>
+     
     </div>
+  </v-container>
+     
 </template>
 
 <script setup>
