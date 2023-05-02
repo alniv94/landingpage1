@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class=" hidden-sm-and-down">
     <p class="text-center text-h4 font-weight-bold my-10 text-accent">
       What Our Clients Say
     </p>
@@ -34,6 +34,44 @@
             </v-card>
           </v-col>
         </v-row>
+      </v-carousel-item>
+    </v-carousel>
+  </v-container>
+
+<!-- Show on sm screen -->
+  <v-container class="hidden-md-and-up">
+    <p class="text-center text-h4 font-weight-bold my-10 text-accent">
+      What Our Clients Say
+    </p>
+    <v-carousel hide-delimiters  cycle>
+      <v-carousel-item
+        v-for="(testimonial, index) in testimonials"
+        :key="index"
+      >
+        
+            <v-card class="mx-auto" max-width="350" height="400">
+              <v-card-text
+                class="d-flex flex-column justify-space-between h-100 pa-10"
+              >
+                <div>
+                  <v-icon size="large" color="accent"
+                    >mdi-format-quote-open-outline</v-icon
+                  >
+                  <p class="text-accent d-inline pa-3">
+                    {{ testimonial.quote }}
+                  </p>
+                  <v-icon size="large" color="accent">
+                    mdi-format-quote-close-outline
+                  </v-icon>
+                </div>
+
+                <div class="d-flex flex-column justify-center align-center">
+                  <v-avatar :image="testimonial.image" size="80"></v-avatar>
+                  <p class="text-accent mt-3">{{ testimonial.author }}</p>
+                </div>
+              </v-card-text>
+            </v-card>
+          
       </v-carousel-item>
     </v-carousel>
   </v-container>

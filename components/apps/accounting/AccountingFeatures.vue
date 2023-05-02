@@ -1,5 +1,5 @@
 <template>
-  <v-container class="text-center my-10">
+  <v-container class="text-center mb-10">
     <p class="text-h4 text-accent pa-5 mb-4">What Makes Our ERP Stand Out</p>
     <v-row>
       <v-col cols="12" md="6" lg="4">

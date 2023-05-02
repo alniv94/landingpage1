@@ -1,19 +1,20 @@
 <template>
   <v-container
-    class="px-15 bg-primary fill-height h-screen align-content-center banner"
+    class="px-4 px-md-15 bg-primary fill-height h-screen align-content-center banner"
     fluid
   >
     <v-row class="d-flex justify-center align-center">
-      <v-col cols="12" sm="7" lg="6">
+      <v-col cols="12" md="7" lg="6">
         <div
           class="text-sm-left text-center d-flex flex-column justify-lg-center algin-sm-end"
         >
-          <span
-            class="font-weight-regular text-white text-lg-h3 text-md-h3 text-sm-h4 mb-2"
+          <p
+            class="font-weight-regular text-white text-lg-h3 text-sm-h4 text-xs-h4  mb-2"
           >
             Elevate Your Business with <br />
-            <strong class="mt-2">Apollo System's ERP</strong>
-          </span>
+            <span><strong class="mt-2">Apollo System's ERP</strong></span>
+            
+      </p>
           <p
             class="text-white text-body-1 font-weight-regular line-height-lg mt-5"
           >
@@ -23,15 +24,16 @@
           </p>
         </div>
       </v-col>
-      <v-col cols="12" sm="5" lg="6" class="hidden-sm-and-up position-relative d-flex">
-        <v-btn
-          class="rounded-circle play-btn"
+      <v-col cols="12" md="5" lg="6" class="position-relative d-flex justify-center">
+        <div class=" hidden-sm-and-down">
+          <v-btn
+          class="rounded-circle play-btn "
           elevation="4"
           size="x-large"
           color="green-lighten-4"
           v-ripple.center
         >
-        <Icon name="mdi-play" size="2em" class="text-accent"/>
+          <Icon name="mdi-play" size="2em" class="text-accent"/>
         
           <v-dialog v-model="dialog" activator="parent" width="auto">
             <iframe
@@ -45,13 +47,16 @@
             ></iframe>
           </v-dialog>
         </v-btn>
-
-        <v-img src="../images/hero1.png" height="400" >
+      </div>
+        <v-img src="../images/hero1.png" height="400" class="hidden-sm-and-down" >
         </v-img>
+        
+    
       </v-col>
     </v-row>
   </v-container>
 </template>
+
 
 <script setup>
 const dialog = ref(false);

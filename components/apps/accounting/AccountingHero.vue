@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="h-screen">
     <div class="d-flex justify-space-between mt-15 pa-5 ">
       <div >
         <p class="text-h6 text-accent">Product</p>

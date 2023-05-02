@@ -5,7 +5,9 @@
     </p>
 
     <div
-      class="d-flex flex-wrap justify-lg-space-between flex-lg-row flex-sm-column align-lg-center justify-sm-center align-sm-center"
+      class="d-flex flex-wrap flex-lg-row align-lg-center 
+      flex-sm-column justify-lg-space-between justify-sm-center 
+      align-sm-center"
     >
       <div class="d-flex flex-column align-center mb-10 mx-2">
         <p class="text-h6 mb-4 text-accent">Manage Your Finances</p>

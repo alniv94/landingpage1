@@ -1,5 +1,5 @@
 <template>
-  <v-container class="h-screen cover">
+  <v-container class="h-screen ">
     <div class="d-flex justify-space-between  mt-15 pa-5">
       <div class="px-4 d-flex flex-column justify-center">
         <p class="text-h6 text-accent">Create a</p>
@@ -11,11 +11,7 @@
           <v-btn class="bg-primary" size="large">Start Demo</v-btn>
         
         </div>
-   
-        
       </div>
-     
-
       <div class="d-flex flex-column justify-center align-center px-5">
         <v-img
           src="../images/herowebsite.png"
