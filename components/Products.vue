@@ -1,5 +1,5 @@
 <template>
-  <v-container class="mt-15">
+  <v-container class="mt-5  animate__fadeInUp">
     <p class="text-h4 text-accent text-center my-5 pa-5">
       Tailored <strong>apps</strong> for every need
     </p>
@@ -20,7 +20,7 @@
             :to="product.link"
             link
           >
-            <Icon :name="product.icon" size="4em" />
+            <Icon :name="product.icon" size="4em" class="animate__animated animate__fadeInUp animate__slower"/>
             <p class="text-body-2 font-weight-medium">
               {{ product.title }}
             </p>
@@ -41,8 +41,8 @@
             :to="product.link"
             link
           >
-            <Icon :name="product.icon" size="4em" />
-            <p class="text-body-2 font-weight-medium">
+            <Icon :name="product.icon" size="4em" class="animate__animated animate__fadeInUp animate__slower"/>
+            <p class="text-body-2 font-weight-medium animate__animated animate__fadeInUp">
               {{ product.title }}
             </p>
           </v-list-item>

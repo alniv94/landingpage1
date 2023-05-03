@@ -1,6 +1,6 @@
 <template>
   <v-container class="mb-10 pb-10 bg-tertiary" fluid>
-    <p class="text-h4 font-weight-bold text-center pa-5">
+    <p class="text-h4 text-accent font-weight-bold text-center pa-5">
       Responsive to any device
     </p>
     <p class="text-subtitle-1 text-accent text-center">

@@ -26,28 +26,6 @@
 </template>
 
 <script setup>
-// const lists = [
-//   {
-//     content:
-//       "Optimize your inventory management and streamline operations with our ERP system",
-//   },
-//   {
-//     content:
-//       "Easily track and monitor your stock levels with real-time inventory tracking",
-//   },
-//   {
-//     content:
-//       "Boost warehouse productivity with our system's forecasting tools for stock optimization",
-//   },
-//   {
-//     content:
-//       "Manage inventory across multiple locations and warehouses with multi-location support",
-//   },
-//   {
-//     content:
-//       "Track items quickly and accurately using our built-in barcode scanning functionality",
-//   },
-// ];
 
 
 </script>

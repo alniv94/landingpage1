@@ -1,6 +1,6 @@
 <template>
   <v-container class="mb-10">
-    <p class="text-center mb-10 text-h4 font-weight-bold">Our Features</p>
+    <p class="text-center text-accent mb-10 text-h4 font-weight-bold">Our Features</p>
     <v-row align="start" justify="space-between">
       <v-col v-for="(feature, index) in features" :key="index" cols="12" md="6" lg="4">
         <v-card class="mx-auto">
