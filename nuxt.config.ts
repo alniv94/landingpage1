@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
+  
   components: [
     {
       global: true,
@@ -11,5 +12,8 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
-  modules: ["@vueuse/motion/nuxt", "nuxt-icon"],
+  modules: ["@vueuse/motion/nuxt", "nuxt-icon",],
+
+  
+  
 });

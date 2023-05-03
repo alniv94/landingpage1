@@ -2,15 +2,7 @@
   <section class="bg-light-blue-lighten-5">
     <v-container class="py-15 " >
     <div
-      v-motion
-      :initial="{
-        opacity: 0,
-        y: 100,
-      }"
-      :visible="{
-        opacity: 1,
-        y: 0,
-      }"
+   
     >
       <span class="py-5 text-accent text-h4 "> Who We Are</span>
       <v-row class="mt-4">

@@ -1,16 +1,6 @@
 <template>
   <section class="bg-tertiary py-10">
-    <v-container
-    v-motion
-    :initial="{
-      opacity: 0,
-      y: 100,
-    }"
-    :visible="{
-      opacity: 1,
-      y: 0,
-    }"
-  >
+    <v-container>
     <div>
       <p class="text-accent text-h4 mb-5 font-weight-bold">Connect With Us</p>
     </div>

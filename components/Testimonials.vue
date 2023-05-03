@@ -1,5 +1,5 @@
 <template>
-  <v-container class=" hidden-sm-and-down">
+  <v-container class="hidden-sm-and-down">
     <p class="text-center text-h4 font-weight-bold my-10 text-accent">
       What Our Clients Say
     </p>
@@ -10,68 +10,75 @@
       >
         <v-row>
           <v-col v-for="(testimonial, i) in chunk" :key="i" class="d-flex">
-            <v-card class="mx-auto" max-width="350" height="400">
-              <v-card-text
-                class="d-flex flex-column justify-space-between h-100 pa-10"
+            <v-hover v-slot="{ isHovering, props }" open-delay="100">
+              <v-card
+                class="mx-auto"
+                max-width="350"
+                height="400"
+                :elevation="isHovering ? 16 : 2"
+                :class="{ 'on-hover': isHovering }"
+                v-bind="props"
               >
-                <div>
-                  <v-icon size="large" color="accent"
-                    >mdi-format-quote-open-outline</v-icon
-                  >
-                  <p class="text-accent d-inline pa-3">
-                    {{ testimonial.quote }}
-                  </p>
-                  <v-icon size="large" color="accent">
-                    mdi-format-quote-close-outline
-                  </v-icon>
-                </div>
+                <v-card-text
+                  class="d-flex flex-column justify-space-between h-100 pa-10"
+                >
+                  <div>
+                    <v-icon size="large" color="accent"
+                      >mdi-format-quote-open-outline</v-icon
+                    >
+                    <p class="text-accent d-inline pa-3">
+                      {{ testimonial.quote }}
+                    </p>
+                    <v-icon size="large" color="accent">
+                      mdi-format-quote-close-outline
+                    </v-icon>
+                  </div>
 
-                <div class="d-flex flex-column justify-center align-center">
-                  <v-avatar :image="testimonial.image" size="80"></v-avatar>
-                  <p class="text-accent mt-3">{{ testimonial.author }}</p>
-                </div>
-              </v-card-text>
-            </v-card>
+                  <div class="d-flex flex-column justify-center align-center">
+                    <v-avatar :image="testimonial.image" size="80"></v-avatar>
+                    <p class="text-accent mt-3">{{ testimonial.author }}</p>
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-hover>
           </v-col>
         </v-row>
       </v-carousel-item>
     </v-carousel>
   </v-container>
 
-<!-- Show on sm screen -->
+  <!-- Show on sm screen -->
   <v-container class="hidden-md-and-up">
     <p class="text-center text-h4 font-weight-bold my-10 text-accent">
       What Our Clients Say
     </p>
-    <v-carousel hide-delimiters  cycle>
+    <v-carousel hide-delimiters cycle>
       <v-carousel-item
         v-for="(testimonial, index) in testimonials"
         :key="index"
       >
-        
-            <v-card class="mx-auto" max-width="350" height="400">
-              <v-card-text
-                class="d-flex flex-column justify-space-between h-100 pa-10"
+        <v-card class="mx-auto" max-width="350" height="400">
+          <v-card-text
+            class="d-flex flex-column justify-space-between h-100 pa-10"
+          >
+            <div>
+              <v-icon size="large" color="accent"
+                >mdi-format-quote-open-outline</v-icon
               >
-                <div>
-                  <v-icon size="large" color="accent"
-                    >mdi-format-quote-open-outline</v-icon
-                  >
-                  <p class="text-accent d-inline pa-3">
-                    {{ testimonial.quote }}
-                  </p>
-                  <v-icon size="large" color="accent">
-                    mdi-format-quote-close-outline
-                  </v-icon>
-                </div>
+              <p class="text-accent d-inline pa-3">
+                {{ testimonial.quote }}
+              </p>
+              <v-icon size="large" color="accent">
+                mdi-format-quote-close-outline
+              </v-icon>
+            </div>
 
-                <div class="d-flex flex-column justify-center align-center">
-                  <v-avatar :image="testimonial.image" size="80"></v-avatar>
-                  <p class="text-accent mt-3">{{ testimonial.author }}</p>
-                </div>
-              </v-card-text>
-            </v-card>
-          
+            <div class="d-flex flex-column justify-center align-center">
+              <v-avatar :image="testimonial.image" size="80"></v-avatar>
+              <p class="text-accent mt-3">{{ testimonial.author }}</p>
+            </div>
+          </v-card-text>
+        </v-card>
       </v-carousel-item>
     </v-carousel>
   </v-container>

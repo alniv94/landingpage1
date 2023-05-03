@@ -63,6 +63,7 @@ const dialog = ref(false);
 </script>
 
 <style scoped>
+
 /* .banner{
   background-image: url(../images/logo1.svg) ;
 
