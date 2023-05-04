@@ -1,6 +1,6 @@
 <template>
   <v-container class="mb-10 py-10 bg-tertiary" fluid>
-    <div data-aos="fade-up" data-aos-duration="500">
+    <div data-aos="fade-up" data-aos-duration="1000">
       <p class="text-h4 text-accent font-weight-bold text-center pa-5">
         Responsive to any device
       </p>

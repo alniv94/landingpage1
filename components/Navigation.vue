@@ -1,11 +1,17 @@
 <template>
   <v-container class="pl-15">
-    <v-app-bar class="bg-primary" :class="appBarClasses" elevation="0">
+    <v-app-bar
+      class="bg-primary"
+      app
+      :elevate-on-scroll="true"
+      :hide-on-scroll="true"
+      :color="appBarColor"
+    >
       <v-row>
         <v-col cols="12" sm="6">
           <div class="d-flex justify-spae-between ma-auto">
-            <v-app-bar-title class="text-white pa-5" >
-              <NuxtLink to="/" class="text-decoration-none text-white" >
+            <v-app-bar-title class="text-white pa-5">
+              <NuxtLink to="/" class="text-decoration-none text-white">
                 Apollo System</NuxtLink
               >
             </v-app-bar-title>
@@ -20,10 +26,8 @@
         </v-col>
         <v-col>
           <div class="d-flex">
-           
             <v-app-bar-title
               class="text-white pointer py-5"
-         
               @click="drawer = !drawer"
               v-if="!isMobile"
               >Apps
@@ -31,34 +35,28 @@
                 {{ drawer ? closeIcon : chevronDownIcon }}
               </v-icon>
             </v-app-bar-title>
-         
           </div>
         </v-col>
       </v-row>
-    
     </v-app-bar>
-     
-  <v-navigation-drawer
-    app
-    v-model="drawer"
-    location="top"
-    disable-resize-watcher
-    temporary
-  >
-    <!--Dropdown Menu-->
-    <div class="d-flex justify-space-between flex-lg-row flex-column">
-      <Finance />
-      <Inventory />
-      <Website />
-      <Sale />
-      <HumanResource />
-    </div>
-  </v-navigation-drawer>
 
+    <v-navigation-drawer
+      app
+      v-model="drawer"
+      location="top"
+      disable-resize-watcher
+      temporary
+    >
+      <!--Dropdown Menu-->
+      <div class="d-flex justify-space-between flex-lg-row flex-column">
+        <Finance />
+        <Inventory />
+        <Website />
+        <Sale />
+        <HumanResource />
+      </div>
+    </v-navigation-drawer>
   </v-container>
-
- 
-
 </template>
 
 <script setup>
@@ -82,30 +80,13 @@ onBeforeUnmount(() => {
 });
 
 // navigation bg color change when scrolledDown
-const scrolledDown = ref(false);
 
-const handleScroll = () => {
-  scrolledDown.value = window.scrollY > 0;
-};
 
-const appBarClasses = computed(() => ({
-  'bg-primary': !scrolledDown.value,
-  
-  'bg-white': scrolledDown.value,
- 
-}));
+const appBarColor = ref('primary');
 
-const appBarText = computed (()=> ({
-  'text-accent' :!scrolledDown.value,
-  'text-white': scrolledDown.value,
-}))
-
-onMounted(() => {
-  window.addEventListener('scroll', handleScroll);
-});
-
-onBeforeUnmount(() => {
-  window.removeEventListener('scroll', handleScroll);
+// Set the app bar color to white when scrolled down
+window.addEventListener('scroll', () => {
+  appBarColor.value = window.pageYOffset > 0 ? 'accent' : 'primary';
 });
 </script>
 

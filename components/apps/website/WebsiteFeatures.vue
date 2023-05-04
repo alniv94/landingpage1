@@ -2,7 +2,7 @@
   <v-container class="mb-10">
     <p class="text-center text-accent mb-10 text-h4 font-weight-bold">Our Features</p>
     <v-row align="start" justify="space-between" data-aos="fade-up"
-          data-aos-duration="500">
+          data-aos-duration="1000">
       <v-col v-for="(feature, index) in features" :key="index" cols="12" md="6" lg="4">
         <v-card class="mx-auto">
           <v-card-text class="text-center">
@@ -55,9 +55,5 @@
 
 <style>
 
-.subtitle-1 {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-}
+
 </style>
