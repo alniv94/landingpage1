@@ -12,7 +12,10 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
-  modules: ["@vueuse/motion/nuxt", "nuxt-icon",],
+  modules: ["nuxt-icon",],
+  plugins: [
+    { src: '~/plugins/aos', mode: 'client' },
+  ],
 
   
   

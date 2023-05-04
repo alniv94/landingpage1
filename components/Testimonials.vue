@@ -1,28 +1,39 @@
 <template>
   <v-container class="hidden-sm-and-down">
-    <p class="text-center text-h4 font-weight-bold my-10 text-accent">
+    <p
+      class="text-center text-h4 font-weight-bold my-10 text-accent"
+      
+    >
       What Our Clients Say
     </p>
-    <v-carousel hide-delimiters show-arrows="hover">
+
+    <v-carousel hide-delimiter-background
+      delimiter-icon="mdi-square" show-arrows="hover">
       <v-carousel-item
         v-for="(chunk, index) in chunkedTestimonials"
         :key="index"
       >
         <v-row>
-          <v-col v-for="(testimonial, i) in chunk" :key="i" class="d-flex">
+          <v-col v-for="(testimonial, i) in chunk" :key="i" class="d-flex" data-aos="zoom-in"
+      data-aos-easing="ease-out-cubic"
+      data-aos-delay="100">
             <v-hover v-slot="{ isHovering, props }" open-delay="100">
               <v-card
                 class="mx-auto"
                 max-width="350"
                 height="400"
+                :color="isHovering ? 'hover' : undefined"
                 :elevation="isHovering ? 16 : 2"
                 :class="{ 'on-hover': isHovering }"
+                open-delay="200"
                 v-bind="props"
+                
+               
               >
                 <v-card-text
                   class="d-flex flex-column justify-space-between h-100 pa-10"
                 >
-                  <div>
+                  <div >
                     <v-icon size="large" color="accent"
                       >mdi-format-quote-open-outline</v-icon
                     >
@@ -47,8 +58,13 @@
     </v-carousel>
   </v-container>
 
-  <!-- Show on sm screen -->
-  <v-container class="hidden-md-and-up">
+  <!-- Show on sm screen  -->
+  <v-container
+    class="hidden-md-and-up"
+    data-aos="zoom-in"
+    data-aos-easing="ease-out-cubic"
+    data-aos-delay="100"
+  >
     <p class="text-center text-h4 font-weight-bold my-10 text-accent">
       What Our Clients Say
     </p>

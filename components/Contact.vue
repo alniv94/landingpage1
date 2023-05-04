@@ -1,6 +1,8 @@
 <template>
   <section class="bg-tertiary py-10">
-    <v-container>
+    <v-container data-aos="zoom-in"
+      data-aos-easing="ease-out-cubic"
+      data-aos-delay="200">
     <div>
       <p class="text-accent text-h4 mb-5 font-weight-bold">Connect With Us</p>
     </div>

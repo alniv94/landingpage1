@@ -1,26 +1,40 @@
 <template>
   <v-container class="mt-5">
-    <p class="text-h4 text-accent text-center my-5 pa-5">
+    <p
+      class="text-h4 text-accent text-center my-5 pa-5"
+      data-aos="zoom-in"
+      data-aos-easing="ease-out-cubic"
+      data-aos-delay="100"
+    >
       Tailored <strong>apps</strong> for every need
     </p>
 
     <div
-      class="d-flex flex-wrap flex-lg-row align-lg-center 
-      flex-sm-column justify-lg-space-between justify-sm-center 
-      align-sm-center"
+      class="d-flex flex-wrap flex-lg-row align-lg-center flex-sm-column justify-lg-space-between justify-sm-center align-sm-center"
     >
       <div class="d-flex flex-column align-center mb-10 mx-2">
-        <p class="text-h6 mb-4 text-accent">Manage Your Finances</p>
+        <p
+          class="text-h6 mb-4 text-accent"
+          data-aos="zoom-in"
+          data-aos-easing="ease-out-cubic"
+          data-aos-delay="100"
+        >
+          Manage Your Finances
+        </p>
 
-        <v-list class="d-flex flex-wrap justify-space-between bg-background">
+        <v-list
+          class="d-flex flex-wrap justify-space-between bg-background overflow-hidden"
+        >
           <v-list-item
+            data-aos="zoom-in-up"
+            data-aos-delay="100"
             v-for="(product, index) in financeProducts"
             :key="index"
             class="text-center mb-5"
             :to="product.link"
             link
           >
-            <Icon :name="product.icon" size="4em" v-motion-fade-visible/>
+            <Icon :name="product.icon" size="4em" />
             <p class="text-body-2 font-weight-medium">
               {{ product.title }}
             </p>
@@ -29,20 +43,26 @@
       </div>
 
       <div class="d-flex flex-column align-center mb-10 mx-2">
-        <p class="text-h6 mb-4 text-accent">
+        <p class="text-h6 mb-4 text-accent" data-aos="zoom-in"
+          data-aos-easing="ease-out-cubic"
+          data-aos-delay="100">
           Logistics and Manafacturing Operation
         </p>
 
-        <v-list class="d-flex flex-wrap justify-space-between bg-background">
+        <v-list
+          class="d-flex flex-wrap justify-space-between bg-background overflow-hidden"
+        >
           <v-list-item
+            data-aos="zoom-in-up"
+            data-aos-delay="200"
             v-for="(product, index) in supplyChainProducts"
             :key="index"
             class="text-center mb-5"
             :to="product.link"
             link
           >
-            <Icon :name="product.icon" size="4em" v-motion-fade-visible/>
-            <p class="text-body-2 font-weight-medium ">
+            <Icon :name="product.icon" size="4em" />
+            <p class="text-body-2 font-weight-medium">
               {{ product.title }}
             </p>
           </v-list-item>
@@ -50,9 +70,15 @@
       </div>
 
       <div class="d-flex flex-column align-center mb-10 mx-2">
-        <p class="text-h6 mb-4 text-accent">Build Website</p>
-        <v-list class="d-flex flex-wrap justify-space-between bg-background">
+        <p class="text-h6 mb-4 text-accent" data-aos="zoom-in"
+          data-aos-easing="ease-out-cubic"
+          data-aos-delay="100">Build Website</p>
+        <v-list
+          class="d-flex flex-wrap justify-space-between bg-background overflow-hidden"
+        >
           <v-list-item
+            data-aos="zoom-in-up"
+            data-aos-delay="150"
             v-for="(product, index) in manufacturingProducts"
             :key="index"
             class="text-center mb-5"
@@ -68,9 +94,15 @@
       </div>
 
       <div class="d-flex flex-column align-center mb-10 mx-2">
-        <p class="text-h6 mb-4 text-accent">Boost Sales Productivity</p>
-        <v-list class="d-flex flex-wrap justify-space-between bg-background">
+        <p class="text-h6 mb-4 text-accent" data-aos="zoom-in"
+          data-aos-easing="ease-out-cubic"
+          data-aos-delay="100">Boost Sales Productivity</p>
+        <v-list
+          class="d-flex flex-wrap justify-space-between bg-background overflow-hidden"
+        >
           <v-list-item
+            data-aos="zoom-in-up"
+            data-aos-delay="100"
             v-for="(product, index) in salesProducts"
             :key="index"
             class="text-center mb-5"
@@ -86,9 +118,15 @@
       </div>
 
       <div class="d-flex flex-column align-center mb-10">
-        <p class="text-h6 mb-4 text-accent">Streamline HR Operations</p>
-        <v-list class="d-flex flex-wrap justify-space-between bg-background">
+        <p class="text-h6 mb-4 text-accent" data-aos="zoom-in"
+          data-aos-easing="ease-out-cubic"
+          data-aos-delay="100">Streamline HR Operations</p>
+        <v-list
+          class="d-flex flex-wrap justify-space-between bg-background overflow-hidden"
+        >
           <v-list-item
+            data-aos="zoom-in-up"
+            data-aos-delay="100"
             v-for="(product, index) in hrProducts"
             :key="index"
             class="text-center mb-5"
@@ -191,3 +229,5 @@ const hrProducts = [
   },
 ];
 </script>
+
+<style scoped></style>

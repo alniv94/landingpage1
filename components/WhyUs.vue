@@ -1,15 +1,9 @@
 <template>
   <v-container
-    v-motion
-    :initial="{
-      opacity: 0,
-      y: 100,
-    }"
-    :visible="{
-      opacity: 1,
-      y: 0,
-    }"
-  >
+    data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine"
+    >
     <div>
       <p class="text-center pa-5 mb-10 text-accent text-h4">
         Why Apollo Systems Enterprise Resource Planning (ERP)?
@@ -36,21 +30,22 @@
                 <v-list-item
                   v-for="(listItem, index) in item.subcontent"
                   :key="index"
-                 
                 >
-                <Icon name="material-symbols:check"
-              size="1.5em"
-              class="text-secondary"
-            />
-                <p class="pa-3 text-accent d-inline">{{ listItem }}</p>
-                  
+                  <Icon
+                    name="material-symbols:check"
+                    size="1.5em"
+                    class="text-secondary"
+                  />
+                  <p class="pa-3 text-accent d-inline">{{ listItem }}</p>
                 </v-list-item>
               </v-list>
             </v-col>
-            <v-col cols="12" md="6" class=" d-flex justify-center align-center">
-             
-                <v-img :src="item.image" height="300" class="rounded-lg hidden-sm-and-down"></v-img>
-           
+            <v-col cols="12" md="6" class="d-flex justify-center align-center">
+              <v-img
+                :src="item.image"
+                height="300"
+                class="rounded-lg hidden-sm-and-down"
+              ></v-img>
             </v-col>
           </v-row>
         </v-window-item>

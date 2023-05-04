@@ -20,6 +20,7 @@
         </v-col>
         <v-col>
           <div class="d-flex">
+           
             <v-app-bar-title
               class="text-white pointer py-5"
               @click="drawer = !drawer"
@@ -29,12 +30,13 @@
                 {{ drawer ? closeIcon : chevronDownIcon }}
               </v-icon>
             </v-app-bar-title>
+         
           </div>
         </v-col>
       </v-row>
+    
     </v-app-bar>
-  </v-container>
-
+     
   <v-navigation-drawer
     app
     v-model="drawer"
@@ -51,6 +53,11 @@
       <HumanResource />
     </div>
   </v-navigation-drawer>
+
+  </v-container>
+
+ 
+
 </template>
 
 <script setup>

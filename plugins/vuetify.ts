@@ -26,7 +26,9 @@ export default defineNuxtPlugin((nuxt) =>{
                   info: '#61A5C2',
                   success: '#caf0f8',
                   background: '#FCFCFC',
-                  tertiary : '#F0F5F9'
+                  tertiary : '#F0F5F9',
+                  trial: '#F0FBFF',
+                  hover: '#468FAF'
                   
                 }
               },
