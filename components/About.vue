@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-light-blue-lighten-5">
-    <v-container class="py-15">
+  <section class="bg-light-blue-lighten-4 my-10">
+    <v-container class="py-15  content">
       <div>
         <span class="py-5 text-accent text-h4"> Who We Are</span>
         <v-row class="mt-4">
@@ -18,7 +18,7 @@
           data-aos="fade-left"
             data-aos-easing="ease-in-sine">
             <p style="line-height: 1.5">
-              Apollo System provides
+              <span class="text-accent text-h6 font-weight-bold"> Apollo System </span>provides
               <strong class="text-accent"
                 >customizable and user-friendly</strong
               >
@@ -42,3 +42,12 @@
     </v-container>
   </section>
 </template>
+
+<style scoped>
+section{
+  transform: skewY(-4deg);
+}
+.content{
+  transform: skewY(4deg);
+}
+</style>

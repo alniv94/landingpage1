@@ -1,4 +1,5 @@
 <template>
+ 
   <v-container
     class="px-4 px-md-15 fill-height h-screen align-content-center banner "
     fluid
@@ -19,7 +20,7 @@
           </p>
         
         </div>
-        <v-btn class="bg-primary mt-10" size="large">
+        <v-btn class=" mt-10 text-capitalize" size="large" color="orange" >
             Watch Overview
 
             <v-dialog v-model="dialog" activator="parent" width="auto">
@@ -43,8 +44,8 @@
       >
         <div class="hidden-sm-and-down"></div>
         <v-img
-          src="../images/hero1.png"
-          height="400"
+          src="../images/hero3.png"
+          height="500"
           class="hidden-sm-and-down"
         >
         </v-img>
@@ -52,6 +53,7 @@
     </v-row>
 
   </v-container>
+ 
 </template>
 
 <script setup>
@@ -68,6 +70,7 @@ background-repeat: no-repeat; */
 background: rgb(2,87,119);
 background: linear-gradient(90deg, rgba(2,87,119,1) 18%, rgba(2,145,200,1) 100%);
 border-radius: 0 0 50% 0;
+
 
 }
 </style>

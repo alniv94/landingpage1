@@ -1,22 +1,28 @@
 <template>
+  <section class="bg-light-blue-lighten-4 py-10">
   <v-container class="hidden-sm-and-down">
-    <p
-      class="text-center text-h4 font-weight-bold my-10 text-accent"
-      
-    >
+    <p class="text-center text-h4 font-weight-bold my-10 text-accent">
       What Our Clients Say
     </p>
 
-    <v-carousel hide-delimiter-background
-      delimiter-icon="mdi-square" show-arrows="hover">
+    <v-carousel
+      hide-delimiter-background
+      show-arrows="hover"
+      cycle
+    >
       <v-carousel-item
         v-for="(chunk, index) in chunkedTestimonials"
         :key="index"
       >
         <v-row>
-          <v-col v-for="(testimonial, i) in chunk" :key="i" class="d-flex" data-aos="zoom-in"
-      data-aos-easing="ease-out-cubic"
-      data-aos-delay="100">
+          <v-col
+            v-for="(testimonial, i) in chunk"
+            :key="i"
+            class="d-flex"
+            data-aos="zoom-in"
+            data-aos-easing="ease-out-cubic"
+            data-aos-delay="500"
+          >
             <v-hover v-slot="{ isHovering, props }" open-delay="100">
               <v-card
                 class="mx-auto"
@@ -27,13 +33,11 @@
                 :class="{ 'on-hover': isHovering }"
                 open-delay="200"
                 v-bind="props"
-                
-               
               >
                 <v-card-text
                   class="d-flex flex-column justify-space-between h-100 pa-10"
                 >
-                  <div >
+                  <div>
                     <v-icon size="large" color="accent"
                       >mdi-format-quote-open-outline</v-icon
                     >
@@ -57,6 +61,7 @@
       </v-carousel-item>
     </v-carousel>
   </v-container>
+</section>
 
   <!-- Show on sm screen  -->
   <v-container
@@ -155,3 +160,6 @@ const chunkedTestimonials = testimonials.reduce(
   []
 );
 </script>
+<style scoped>
+
+</style>

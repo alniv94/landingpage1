@@ -1,10 +1,14 @@
 <template>
-  <section class="bg-tertiary py-10">
-    <v-container data-aos="zoom-in"
-      data-aos-easing="ease-out-cubic"
-      data-aos-delay="200">
+  <v-container class="my-10">
     <div>
-      <p class="text-accent text-h4 mb-5 font-weight-bold">Connect With Us</p>
+      <p
+        class="text-accent text-h4 mb-5 font-weight-bold"
+        data-aos="zoom-in-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-delay="200"
+      >
+        Connect With Us
+      </p>
     </div>
 
     <iframe
@@ -15,11 +19,20 @@
       allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
+      data-aos="zoom-in-up"
+      data-aos-easing="ease-out-cubic"
+      data-aos-delay="200"
     ></iframe>
 
     <v-row class="mt-5">
-      <v-col cols="12" md="4">
-        <v-list class="bg-tertiary">
+      <v-col
+        cols="12"
+        md="4"
+        data-aos="zoom-in-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-delay="200"
+      >
+        <v-list class="bg-background">
           <v-list-item>
             <v-list-item-title class="text-accent font-weight-bold py-5">
               Location
@@ -47,17 +60,21 @@
           </v-list-item>
         </v-list>
       </v-col>
-      <v-col cols="12" md="8">
+      <v-col
+        cols="12"
+        md="8"
+        data-aos="zoom-in-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-delay="200"
+      >
         <v-form>
           <div class="d-flex">
             <v-text-field
-              
               label="Name"
               required
               variant="outlined"
             ></v-text-field>
             <v-text-field
-              
               label="Email"
               required
               variant="outlined"
@@ -65,32 +82,18 @@
           </div>
 
           <v-text-field
-         
             label="Subject"
             required
             variant="outlined"
           ></v-text-field>
-          <v-textarea
-            
-            label="Message"
-            required
-            variant="outlined"
-          ></v-textarea>
-          <v-btn class="mr-4 bg-accent" size="large">
-            Send Message
-          </v-btn>
+          <v-textarea label="Message" required variant="outlined"></v-textarea>
+          <v-btn class="mr-4 bg-accent" size="large"> Send Message </v-btn>
         </v-form>
       </v-col>
     </v-row>
   </v-container>
-  </section>
-  
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>

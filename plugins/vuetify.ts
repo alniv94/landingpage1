@@ -28,7 +28,8 @@ export default defineNuxtPlugin((nuxt) =>{
                   background: '#FCFCFC',
                   tertiary : '#F0F5F9',
                   trial: '#F0FBFF',
-                  hover: '#468FAF'
+                  trial2: '#7AC3E7',
+                  hover: '#E3F2FD'
                   
                 }
               },
