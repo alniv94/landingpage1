@@ -1,11 +1,11 @@
 <template>
   <v-container class="pl-15">
-    <v-app-bar class="bg-primary" elevation="0">
+    <v-app-bar class="bg-primary" :class="appBarClasses" elevation="0">
       <v-row>
         <v-col cols="12" sm="6">
           <div class="d-flex justify-spae-between ma-auto">
-            <v-app-bar-title class="text-white pa-5">
-              <NuxtLink to="/" class="text-decoration-none text-white">
+            <v-app-bar-title class="text-white pa-5" >
+              <NuxtLink to="/" class="text-decoration-none text-white" >
                 Apollo System</NuxtLink
               >
             </v-app-bar-title>
@@ -23,6 +23,7 @@
            
             <v-app-bar-title
               class="text-white pointer py-5"
+         
               @click="drawer = !drawer"
               v-if="!isMobile"
               >Apps
@@ -78,6 +79,33 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   window.removeEventListener("resize", handleResize);
+});
+
+// navigation bg color change when scrolledDown
+const scrolledDown = ref(false);
+
+const handleScroll = () => {
+  scrolledDown.value = window.scrollY > 0;
+};
+
+const appBarClasses = computed(() => ({
+  'bg-primary': !scrolledDown.value,
+  
+  'bg-white': scrolledDown.value,
+ 
+}));
+
+const appBarText = computed (()=> ({
+  'text-accent' :!scrolledDown.value,
+  'text-white': scrolledDown.value,
+}))
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll);
 });
 </script>
 

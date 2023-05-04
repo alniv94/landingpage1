@@ -1,16 +1,18 @@
 <template>
-  <v-container class="mb-10 pb-10 bg-tertiary" fluid>
-    <p class="text-h4 text-accent font-weight-bold text-center pa-5">
-      Responsive to any device
-    </p>
-    <p class="text-subtitle-1 text-accent text-center">
-      Seamless browsing, anytime, anywhere - our website is always responsive to
-      any device!
-    </p>
-    <div class="d-flex justify-space-evenly mt-5">
-      <div v-for="item in items">
-        <Icon :name="item.icon" size="7em" />
-        <p class="text-center">{{ item.caption }}</p>
+  <v-container class="mb-10 py-10 bg-tertiary" fluid>
+    <div data-aos="fade-up" data-aos-duration="500">
+      <p class="text-h4 text-accent font-weight-bold text-center pa-5">
+        Responsive to any device
+      </p>
+      <p class="text-subtitle-1 text-accent text-center">
+        Seamless browsing, anytime, anywhere - our website is always responsive
+        to any device!
+      </p>
+      <div class="d-flex justify-space-evenly mt-5">
+        <div v-for="item in items">
+          <Icon :name="item.icon" size="7em" />
+          <p class="text-center">{{ item.caption }}</p>
+        </div>
       </div>
     </div>
   </v-container>
