@@ -2,7 +2,7 @@
   <v-container class="my-10">
     <div>
       <p
-        class="text-accent text-h4 mb-5 font-weight-bold"
+        class="text-white text-h4 mb-5 font-weight-bold"
         data-aos="zoom-in-up"
         data-aos-easing="ease-out-cubic"
         data-aos-delay="200"
@@ -34,7 +34,7 @@
       >
         <v-list class="bg-background">
           <v-list-item>
-            <v-list-item-title class="text-accent font-weight-bold py-5">
+            <v-list-item-title class="text-white font-weight-bold py-5">
               Location
             </v-list-item-title>
             <v-icon>mdi-map-marker</v-icon>
@@ -43,7 +43,7 @@
             Metro Manila
           </v-list-item>
           <v-list-item>
-            <v-list-item-title class="text-accent font-weight-bold py-5">
+            <v-list-item-title class="text-white font-weight-bold py-5">
               Call
             </v-list-item-title>
             <v-icon>mdi-phone</v-icon>
@@ -51,7 +51,7 @@
             (555) 555-5555
           </v-list-item>
           <v-list-item>
-            <v-list-item-title class="text-accent font-weight-bold py-5">
+            <v-list-item-title class="text-white font-weight-bold py-5">
               Email
             </v-list-item-title>
             <v-icon>mdi-email</v-icon>

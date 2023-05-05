@@ -1,6 +1,6 @@
 <template>
   <v-container class="mb-10 py-10 bg-tertiary" fluid>
-    <div data-aos="fade-up" data-aos-duration="1000">
+    <div data-aos="zoom-in" data-aos-duration="3000">
       <p class="text-h4 text-accent font-weight-bold text-center pa-5">
         Responsive to any device
       </p>
@@ -11,7 +11,7 @@
       <div class="d-flex justify-space-evenly mt-5">
         <div v-for="item in items">
           <Icon :name="item.icon" size="7em" />
-          <p class="text-center">{{ item.caption }}</p>
+          <p class="text-center text-light-blue-accent-2">{{ item.caption }}</p>
         </div>
       </div>
     </div>

@@ -1,67 +1,63 @@
 <template>
-  <section class="bg-light-blue-lighten-4 py-10">
-  <v-container class="hidden-sm-and-down">
-    <p class="text-center text-h4 font-weight-bold my-10 text-accent">
-      What Our Clients Say
-    </p>
+  <section class="bg-fourth py-10">
+    <v-container class="hidden-sm-and-down">
+      <p class="text-center text-h4 font-weight-bold my-10 text-white">
+        What Our Clients Say
+      </p>
 
-    <v-carousel
-      hide-delimiter-background
-      show-arrows="hover"
-      cycle
-    >
-      <v-carousel-item
-        v-for="(chunk, index) in chunkedTestimonials"
-        :key="index"
-      >
-        <v-row>
-          <v-col
-            v-for="(testimonial, i) in chunk"
-            :key="i"
-            class="d-flex"
-            data-aos="zoom-in"
-            data-aos-easing="ease-out-cubic"
-            data-aos-delay="500"
-          >
-            <v-hover v-slot="{ isHovering, props }" open-delay="100">
-              <v-card
-                class="mx-auto"
-                max-width="350"
-                height="400"
-                :color="isHovering ? 'hover' : undefined"
-                :elevation="isHovering ? 16 : 2"
-                :class="{ 'on-hover': isHovering }"
-                open-delay="200"
-                v-bind="props"
-              >
-                <v-card-text
-                  class="d-flex flex-column justify-space-between h-100 pa-10"
+      <v-carousel hide-delimiter-background show-arrows="hover" cycle>
+        <v-carousel-item
+          v-for="(chunk, index) in chunkedTestimonials"
+          :key="index"
+        >
+          <v-row>
+            <v-col
+              v-for="(testimonial, i) in chunk"
+              :key="i"
+              class="d-flex"
+              data-aos="zoom-in"
+              data-aos-easing="ease-out-cubic"
+              data-aos-delay="300"
+            >
+              <v-hover v-slot="{ isHovering, props }" open-delay="100">
+                <v-card
+                  class="mx-auto"
+                  max-width="350"
+                  height="400"
+                  :color="isHovering ? 'hover' : undefined"
+                  :elevation="isHovering ? 16 : 2"
+                  :class="{ 'on-hover': isHovering }"
+                  open-delay="200"
+                  v-bind="props"
                 >
-                  <div>
-                    <v-icon size="large" color="accent"
-                      >mdi-format-quote-open-outline</v-icon
-                    >
-                    <p class="text-accent d-inline pa-3">
-                      {{ testimonial.quote }}
-                    </p>
-                    <v-icon size="large" color="accent">
-                      mdi-format-quote-close-outline
-                    </v-icon>
-                  </div>
+                  <v-card-text
+                    class="d-flex flex-column justify-space-between h-100 pa-10"
+                  >
+                    <div>
+                      <v-icon size="large" color="accent"
+                        >mdi-format-quote-open-outline</v-icon
+                      >
+                      <p class="text-accent d-inline pa-3">
+                        {{ testimonial.quote }}
+                      </p>
+                      <v-icon size="large" color="accent">
+                        mdi-format-quote-close-outline
+                      </v-icon>
+                    </div>
 
-                  <div class="d-flex flex-column justify-center align-center">
-                    <v-avatar :image="testimonial.image" size="80"></v-avatar>
-                    <p class="text-accent mt-3">{{ testimonial.author }}</p>
-                  </div>
-                </v-card-text>
-              </v-card>
-            </v-hover>
-          </v-col>
-        </v-row>
-      </v-carousel-item>
-    </v-carousel>
-  </v-container>
-</section>
+                    <div class="d-flex flex-column justify-center align-center">
+                      <v-avatar :image="testimonial.image" size="80"></v-avatar>
+                      <p class="text-accent mt-3">{{ testimonial.author }}</p>
+                    </div>
+                  </v-card-text>
+                </v-card>
+              </v-hover>
+            </v-col>
+          </v-row>
+        </v-carousel-item>
+      </v-carousel>
+    </v-container>
+  </section>
 
   <!-- Show on sm screen  -->
   <v-container
@@ -160,6 +156,4 @@ const chunkedTestimonials = testimonials.reduce(
   []
 );
 </script>
-<style scoped>
-
-</style>
+<style scoped></style>

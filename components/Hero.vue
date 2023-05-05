@@ -3,7 +3,7 @@
     class="px-4 px-md-15 fill-height h-screen align-content-center banner"
     fluid
   >
-    <v-row class="d-flex justify-center align-center content pa-5">
+    <v-row class="d-flex justify-center align-center pa-5">
       <v-col cols="12" md="7" lg="6">
         <div
           class="text-sm-left text-center d-flex flex-column justify-lg-center algin-sm-end"
@@ -20,7 +20,7 @@
             sizes.
           </p>
         </div>
-        <v-btn class="mt-10 text-capitalize" size="large" color="orange">
+        <v-btn class="mt-10 text-capitalize text-accent" size="large" color="orange">
           Watch Overview
 
           <v-dialog v-model="dialog" activator="parent" width="auto">
@@ -45,7 +45,7 @@
         <div class="hidden-sm-and-down"></div>
         <v-img
           src="../images/hero3.png"
-          height="500"
+          max-height="500"
           class="hidden-sm-and-down"
         >
         </v-img>

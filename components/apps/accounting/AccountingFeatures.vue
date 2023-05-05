@@ -1,14 +1,10 @@
 <template>
-  <v-container class="text-center mb-10">
-    <p class="text-h4 text-accent pa-5 mb-4">What Makes Our ERP Stand Out</p>
-    <v-row
-      
-    >
-      <v-col cols="12" md="6" lg="4"
-      >
-        <v-card 
-        data-aos="zoom-in" 
-      data-aos-delay="100">
+   <section class="mt-10 bg-fourth">
+  <v-container class="text-center mt-10 pb-15">
+    <p class="text-h4 text-white pa-5 mb-4">What Makes Our ERP Stand Out</p>
+    <v-row data-aos="zoom-in" data-aos-delay="500">
+      <v-col cols="12" md="6" lg="4">
+        <v-card >
           <v-card-title>
             <Icon name="material-symbols:bar-chart-rounded" size="1.5em" />
             <span class="px-1 text-accent">Comprehensive Reporting</span>
@@ -83,6 +79,7 @@
       </v-col>
     </v-row>
   </v-container>
+</section>
 </template>
 
 <style scoped>

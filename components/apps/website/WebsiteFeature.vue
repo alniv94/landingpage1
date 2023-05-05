@@ -1,7 +1,9 @@
 <template>
-  <section class="bg-cyan-lighten-1 py-15">
+  <section class="bg-fourth py-10">
     <v-container fill-height>
-      <p class="text-h4  text-center font-weight-bold">Drag-and-Drop Website Editor</p>
+      <p class="text-h4 text-center font-weight-bold text-white pb-10">
+        Drag-and-Drop Website Editor
+      </p>
       <v-row align="center" justify="center">
         <v-col
           cols="12"
@@ -10,7 +12,7 @@
           data-aos-easing="ease-out-cubic"
           data-aos-duration="500"
         >
-          <p class="text-h6 text-accent pb-5">
+          <p class="text-h6 text-white pb-5">
             Create professional-quality designs with ease
           </p>
           <p class="text-white text-h4 font-weight-bold">

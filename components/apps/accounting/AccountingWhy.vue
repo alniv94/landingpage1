@@ -1,21 +1,21 @@
 <template>
-  <section class="mt-10 bg-tertiary">
+ 
     <v-container
       data-aos="fade-right"
       data-aos-offset="300"
       data-aos-easing="ease-in-sine"
     >
       <!-- <div>
-     <p class="text-center pa-5 mb-10 text-accent text-h4">
+     <p class="text-center pa-5 mb-10 text-white text-h4">
          Why Apollo Systems Enterprise Resource Planning (ERP)?
        </p>
    </div> -->
 
-      <v-card flat class="bg-tertiary">
+      <v-card flat class="bg-background">
         <v-tabs v-model="tab" class="d-flex justify-space-between" grow>
           <v-tab
             v-for="item in items"
-            class="text-h5 font-weight-bold text-accent"
+            class="text-h5 font-weight-bold text-light-blue-accent-2"
           >
             {{ item.title }}
           </v-tab>
@@ -26,11 +26,11 @@
             <v-row>
               <v-col cols="12" md="6" class="pa-10 mt-5">
                 <span
-                  class="text-h6 text-wrap ma-2 text-justify font-weight-bold text-accent"
+                  class="text-h6 text-wrap ma-2 text-justify font-weight-bold text-white"
                 >
                   {{ item.content }}
                 </span>
-                <v-list class="bg-tertiary">
+                <v-list class="bg-background">
                   <v-list-item
                     v-for="(listItem, index) in item.subcontent"
                     :key="index"
@@ -40,7 +40,7 @@
                       size="1.5em"
                       class="text-secondary"
                     />
-                    <p class="pa-3 text-accent d-inline">{{ listItem }}</p>
+                    <p class="pa-3 text-white d-inline">{{ listItem }}</p>
                   </v-list-item>
                 </v-list>
               </v-col>
@@ -60,7 +60,7 @@
         </v-window>
       </v-card>
     </v-container>
-  </section>
+ 
 </template>
 
 <script setup>

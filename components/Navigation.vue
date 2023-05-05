@@ -1,15 +1,19 @@
 <template>
-  <v-container class="pl-15">
+  <v-container>
     <v-app-bar
       class="bg-primary"
       app
       elevation="0"
-      :color="appBarColor"
+      scroll-behavior="hide"
+      scroll-threshold="80"
     >
       <v-row>
         <v-col cols="12" sm="6">
-          <div class="d-flex justify-spae-between ma-auto">
-            <v-app-bar-title class="text-white pa-5">
+          <div class="d-flex">
+            <NuxtLink to="/" class="ml-15">
+              <v-img src="./images/logo.png" width="40" height="60"></v-img
+            ></NuxtLink>
+            <v-app-bar-title class="text-white pt-5">
               <NuxtLink to="/" class="text-decoration-none text-white">
                 Apollo System</NuxtLink
               >
@@ -17,7 +21,6 @@
             <template v-if="isMobile">
               <v-icon
                 @click="drawer = !drawer"
-                
                 class="text-white align-center pr-10 ma-auto"
                 >mdi-menu</v-icon
               >
@@ -78,16 +81,6 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener("resize", handleResize);
 });
-
-// navigation bg color change when scrolledDown
-
-
-// const appBarColor = ref('primary');
-
-
-// window.addEventListener('scroll', () => {
-//   appBarColor.value = window.pageYOffset > 0 ? 'accent' : 'primary';
-// });
 </script>
 
 <style scoped>

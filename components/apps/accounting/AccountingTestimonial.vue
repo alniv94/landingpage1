@@ -2,13 +2,13 @@
   <v-container fluid>
     <v-row justify="space-evenly" class="ma-15">
       <v-col class="" data-aos="fade-right" data-aos-easing="ease-in-sine">
-        <p class="text-h5 text-accent py-5">
+        <p class="text-h5 text-light-blue-accent-2 py-5">
           <strong
             >Streamline Your Financial Management with Our Accounting Management
             ERP</strong
           >
         </p>
-        <p class="text-body-1 text-accent">
+        <p class="text-body-1 text-white">
           Streamline your financial management with our accounting management
           ERP. Our system offers advantages such as automated invoicing and
           payment processing, accurate payroll management, customizable
@@ -17,14 +17,13 @@
           of the competition. Contact us today to learn more.
         </p>
       </v-col>
-      <v-col    data-aos="fade-left"
-            data-aos-easing="ease-in-sine">
+      <v-col data-aos="fade-left" data-aos-easing="ease-in-sine">
         <Icon
           name="mingcute:quote-left-fill"
           size="2em"
           class="text-secondary"
         />
-        <p class="text-accent py-12 d-inline font-italic text-body-1">
+        <p class="text-white py-12 d-inline font-italic text-body-1">
           The automated invoicing and payment processing features of the
           accounting management ERP have been a game changer for our business.
           It has significantly improved our cash flow management and saved us
@@ -38,7 +37,7 @@
         <div class="d-flex justify-center align-center ma-5">
           <v-avatar image="../images/accounting/hero.png" size="80"></v-avatar>
           <div class="mx-8">
-            <p class="text-accent"><strong>Alniv</strong></p>
+            <p class="text-white"><strong>Alniv</strong></p>
             <p class="">Acme CEO</p>
           </div>
         </div>

@@ -1,7 +1,7 @@
 <template>
   <v-container class="mt-5">
     <p
-      class="text-h4 text-accent text-center my-5 pa-5"
+      class="text-h4 text-light-blue-accent-2 text-center my-5 pa-5"
       data-aos="zoom-in"
       data-aos-easing="ease-out-cubic"
       data-aos-delay="100"
@@ -14,7 +14,7 @@
     >
       <div class="d-flex flex-column align-center mb-10 mx-2">
         <p
-          class="text-h6 mb-4 text-accent"
+          class="text-h6 mb-4 text-light-blue-accent-2"
           data-aos="zoom-in"
           data-aos-easing="ease-out-cubic"
           data-aos-delay="100"
@@ -43,9 +43,12 @@
       </div>
 
       <div class="d-flex flex-column align-center mb-10 mx-2">
-        <p class="text-h6 mb-4 text-accent" data-aos="zoom-in"
+        <p
+          class="text-h6 mb-4 text-light-blue-accent-2"
+          data-aos="zoom-in"
           data-aos-easing="ease-out-cubic"
-          data-aos-delay="100">
+          data-aos-delay="100"
+        >
           Logistics and Manafacturing Operation
         </p>
 
@@ -70,9 +73,14 @@
       </div>
 
       <div class="d-flex flex-column align-center mb-10 mx-2">
-        <p class="text-h6 mb-4 text-accent" data-aos="zoom-in"
+        <p
+          class="text-h6 mb-4 text-light-blue-accent-2"
+          data-aos="zoom-in"
           data-aos-easing="ease-out-cubic"
-          data-aos-delay="100">Build Website</p>
+          data-aos-delay="100"
+        >
+          Build Website
+        </p>
         <v-list
           class="d-flex flex-wrap justify-space-between bg-background overflow-hidden"
         >
@@ -94,9 +102,15 @@
       </div>
 
       <div class="d-flex flex-column align-center mb-10 mx-2">
-        <p class="text-h6 mb-4 text-accent" data-aos="zoom-in"
+        <p
+          class="text-h6 mb-4 text-light-blue-accent-2"
+          data-aos="zoom-in"
           data-aos-easing="ease-out-cubic"
-          data-aos-delay="100">Boost Sales Productivity</p>
+          data-aos-delay="100"
+         
+        >
+          Boost Sales Productivity
+        </p>
         <v-list
           class="d-flex flex-wrap justify-space-between bg-background overflow-hidden"
         >
@@ -118,9 +132,14 @@
       </div>
 
       <div class="d-flex flex-column align-center mb-10">
-        <p class="text-h6 mb-4 text-accent" data-aos="zoom-in"
+        <p
+          class="text-h6 mb-4 text-light-blue-accent-2"
+          data-aos="zoom-in"
           data-aos-easing="ease-out-cubic"
-          data-aos-delay="100">Streamline HR Operations</p>
+          data-aos-delay="100"
+        >
+          Streamline HR Operations
+        </p>
         <v-list
           class="d-flex flex-wrap justify-space-between bg-background overflow-hidden"
         >
@@ -134,7 +153,7 @@
             link
           >
             <Icon :name="product.icon" size="4em" />
-            <p class="text-body-2 font-weight-medium">
+            <p class="wrap text-body-2 font-weight-medium"   style="max-width: 6rem;">
               {{ product.title }}
             </p>
           </v-list-item>
@@ -230,4 +249,8 @@ const hrProducts = [
 ];
 </script>
 
-<style scoped></style>
+<style scoped>
+.wrap{
+  word-break: break-word
+}
+</style>

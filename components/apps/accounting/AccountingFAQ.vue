@@ -1,7 +1,7 @@
 <template>
-  <section class="bg-tertiary pb-10">
+  <section class="pb-10">
     <v-container>
-      <p class="text-accent text-h4 text-center py-8">
+      <p class="text-white text-h4 text-center py-8">
         Apollo Accountings ERP-FAQ
       </p>
       <v-expansion-panels variant="accordion">

@@ -1,5 +1,5 @@
 <template>
-  <v-footer color="accent" class="d-block"> 
+  <v-footer color="accent" class="d-block">
     <div class="d-flex justify-space-around w-50">
       <div>
         <h3 class="white--text ma-2">Apollo System</h3>
@@ -21,17 +21,14 @@
         </v-list>
       </div>
     </div>
-    <div class="text-center" >
-    <v-divider></v-divider>
-    <p>Apollo System  All rights reserved</p>
-  </div>
+    <div class="text-center">
+      <v-divider></v-divider>
+      <p>Apollo System All rights reserved</p>
+    </div>
   </v-footer>
- 
 </template>
 
 <script setup>
-
-
 const items = ref([
   {
     title: "About Us",
@@ -53,5 +50,3 @@ const items = ref([
 
 const icons = ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"];
 </script>
-
-

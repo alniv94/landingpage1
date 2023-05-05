@@ -1,11 +1,11 @@
 <template>
-  <v-container class="bg-tertiary" fluid>
+  <v-container class="bg-fourth" fluid>
     <v-row justify="space-evenly" class="ma-15">
       <v-col data-aos="fade-right" data-aos-duration="1000">
-        <p class="text-h4 text-accent py-5 font-weight-bold">
+        <p class="text-h4 text-white py-5 font-weight-bold">
           What is Apollo Website Builder?
         </p>
-        <p class="text-body-1 text-accent">
+        <p class="text-body-1 text-white">
           Inventory ERP offers businesses a suite of powerful inventory
           management tools, including real-time tracking, item movement
           monitoring, and stock optimization, all of which can be customized to
@@ -20,7 +20,7 @@
           size="2em"
           class="text-secondary"
         />
-        <p class="text-accent py-12 d-inline font-italic text-body-1">
+        <p class="text-white py-12 d-inline font-italic text-body-1">
           The automated invoicing and payment processing features of the
           accounting management ERP have been a game changer for our business.
           It has significantly improved our cash flow management and saved us
@@ -34,14 +34,14 @@
         <div class="d-flex justify-center align-center ma-5">
           <v-avatar image="../images/accounting/hero.png" size="80"></v-avatar>
           <div class="mx-8">
-            <p class="text-accent"><strong>Alniv</strong></p>
+            <p class="text-white"><strong>Alniv</strong></p>
             <p class="">Acme CEO</p>
           </div>
         </div>
       </v-col>
     </v-row>
 
-    <p class="text-accent text-h4 text-center py-8">Apollo Inventory ERP-FAQ</p>
+    <p class="text-white text-h4 text-center py-8">Apollo Inventory ERP-FAQ</p>
 
     <!-- Accordion FAQ -->
     <v-container>
