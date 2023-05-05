@@ -5,6 +5,7 @@
     <WebsiteFeature />
     <WebsiteResponsive />
     <WebsiteFeatures />
+    <WebsiteWhy/>
     
     <WebsiteTestemonial />
   </v-container>

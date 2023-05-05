@@ -3,8 +3,7 @@
     <v-app-bar
       class="bg-primary"
       app
-      :elevate-on-scroll="true"
-      :hide-on-scroll="true"
+      elevation="0"
       :color="appBarColor"
     >
       <v-row>
@@ -18,6 +17,7 @@
             <template v-if="isMobile">
               <v-icon
                 @click="drawer = !drawer"
+                
                 class="text-white align-center pr-10 ma-auto"
                 >mdi-menu</v-icon
               >
@@ -82,12 +82,12 @@ onBeforeUnmount(() => {
 // navigation bg color change when scrolledDown
 
 
-const appBarColor = ref('primary');
+// const appBarColor = ref('primary');
 
-// Set the app bar color to white when scrolled down
-window.addEventListener('scroll', () => {
-  appBarColor.value = window.pageYOffset > 0 ? 'accent' : 'primary';
-});
+
+// window.addEventListener('scroll', () => {
+//   appBarColor.value = window.pageYOffset > 0 ? 'accent' : 'primary';
+// });
 </script>
 
 <style scoped>

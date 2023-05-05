@@ -1,7 +1,8 @@
 <template>
   <v-container class="h-screen ">
+   
     <div class="d-flex justify-space-between  mt-15 pa-5">
-      <div class="px-4 d-flex flex-column justify-center">
+      <div class="px-4 d-flex flex-column justify-center" data-aos="zoom-in">
         <p class="text-h6 text-accent">Create a</p>
         <p class="text-h3 pb-3 font-weight-bold">Professional Business Website</p>
         <p class="text-subtitle-1 text-accent">
@@ -12,7 +13,7 @@
         
         </div>
       </div>
-      <div class="d-flex flex-column justify-center align-center px-5">
+      <div class="d-flex flex-column justify-center align-center px-5" data-aos="zoom-in">
         <v-img
           src="../images/herowebsite.png"
           width="550"

@@ -1,6 +1,7 @@
 <template>
   <section class="bg-cyan-lighten-1 py-15">
     <v-container fill-height>
+      <p class="text-h4  text-center font-weight-bold">Drag-and-Drop Website Editor</p>
       <v-row align="center" justify="center">
         <v-col
           cols="12"
