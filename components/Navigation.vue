@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-app-bar
-      class="bg-primary"
+      class="bg-background"
       app
       elevation="0"
       scroll-behavior="hide"

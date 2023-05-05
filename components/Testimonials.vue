@@ -17,7 +17,7 @@
               class="d-flex"
               data-aos="zoom-in"
               data-aos-easing="ease-out-cubic"
-              data-aos-delay="300"
+              data-aos-delay="500"
             >
               <v-hover v-slot="{ isHovering, props }" open-delay="100">
                 <v-card
