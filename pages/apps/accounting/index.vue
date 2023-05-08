@@ -2,19 +2,20 @@
   <v-container class="bg-background ma-0 pa-0" fluid>
     <!-- Hero -->
     <AccountingHero />
+    
+    <!-- Dashboard preview -->
+    <DashboardView />
+
     <!-- Testimonial -->
-<AccountingTestimonial/>
+    <AccountingTestimonial />
 
     <!-- Why -->
-    <AccountingWhy/>
-    
-     <!-- Features  -->
-     <AccountingFeatures />
+    <AccountingWhy />
+
+    <!-- Features  -->
+    <AccountingFeatures />
 
     <!-- FAQ -->
     <AccountingFAQ />
-
-   
-
   </v-container>
 </template>

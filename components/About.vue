@@ -21,24 +21,24 @@
             data-aos-easing="ease-in-sine"
           >
             <p style="line-height: 1.5">
-              <span class="text-light-blue-accent-2 text-h6 font-weight-bold">
+              <span class="text-highlight text-h6 font-weight-bold">
                 Apollo System </span
               >provides
-              <strong class="text-light-blue-accent-2"
+              <strong class="text-highlight"
                 >customizable and user-friendly</strong
               >
               ERP software solutions that streamline business operations and
               help organizations achieve their goals. With
-              <strong class="text-light-blue-accent-2"
+              <strong class="text-highlight"
                 >flexible and scalable solutions,</strong
               >
               we help companies grow their operations. Our commitment to
               excellence and innovation is evidenced by numerous industry
               awards. Join businesses who partner with Apollo System to
-              <strong class="text-light-blue-accent-2"
+              <strong class="text-highlight"
                 >optimize processes, reduce costs,</strong
               >
-              and <strong class="text-light-blue-accent-2">increase productivity.</strong>
+              and <strong class="text-highlight">increase productivity.</strong>
             </p>
           </v-col>
         </v-row>

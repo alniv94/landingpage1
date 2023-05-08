@@ -12,7 +12,7 @@
 
     <v-card flat class="bg-background">
       <v-tabs v-model="tab" class="d-flex justify-space-between" grow>
-        <v-tab v-for="item in items" class="text-h6 font-weight-bold text-light-blue-accent-2">
+        <v-tab v-for="item in items" class="text-h6 font-weight-bold text-highlight">
           {{ item.title }}
         </v-tab>
       </v-tabs>

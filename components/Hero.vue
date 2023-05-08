@@ -65,12 +65,12 @@ const dialog = ref(false);
 background-position: center center;
 background-size: cover;
 background-repeat: no-repeat; */
-  /* background: rgb(2, 87, 119);
-  background: linear-gradient(
+  background: #101a2b;
+  /* background: linear-gradient(
     90deg,
     rgba(2, 87, 119, 1) 18%,
     rgba(2, 145, 200, 1) 100%
-  );
-  border-radius: 0 0 50% 0; */
+  ); */
+  border-radius: 0 0 50% 0;
 }
 </style>

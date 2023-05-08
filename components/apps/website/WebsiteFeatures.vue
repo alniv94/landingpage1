@@ -19,7 +19,7 @@
         <v-card class="mx-auto bg-fourth" >
           <v-card-text class="text-center ">
             <Icon :name="feature.icon" size="3em" />
-            <h3 class="mt-6 text-light-blue-accent-2">{{ feature.title }}</h3>
+            <h3 class="mt-6 text-highlight">{{ feature.title }}</h3>
             <p class="subtitle-1 mt-3">{{ feature.description }}</p>
           </v-card-text>
         </v-card>

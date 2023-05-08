@@ -1,12 +1,12 @@
 <template>
   <v-container class="mt-5">
     <p
-      class="text-h4 text-light-blue-accent-2 text-center my-5 pa-5"
+      class="text-h4 text-white text-center my-10 pb-10"
       data-aos="zoom-in"
       data-aos-easing="ease-out-cubic"
       data-aos-delay="100"
     >
-      Tailored <strong>apps</strong> for every need
+      Tailored <strong class="text-highlight">apps</strong> for every need
     </p>
 
     <div
@@ -14,7 +14,7 @@
     >
       <div class="d-flex flex-column align-center mb-10 mx-2">
         <p
-          class="text-h6 mb-4 text-light-blue-accent-2"
+          class="text-h6 mb-4 text-highlight"
           data-aos="zoom-in"
           data-aos-easing="ease-out-cubic"
           data-aos-delay="100"
@@ -33,6 +33,7 @@
             class="text-center mb-5"
             :to="product.link"
             link
+            
           >
             <Icon :name="product.icon" size="4em" />
             <p class="text-body-2 font-weight-medium">
@@ -44,7 +45,7 @@
 
       <div class="d-flex flex-column align-center mb-10 mx-2">
         <p
-          class="text-h6 mb-4 text-light-blue-accent-2"
+          class="text-h6 mb-4 text-highlight"
           data-aos="zoom-in"
           data-aos-easing="ease-out-cubic"
           data-aos-delay="100"
@@ -74,7 +75,7 @@
 
       <div class="d-flex flex-column align-center mb-10 mx-2">
         <p
-          class="text-h6 mb-4 text-light-blue-accent-2"
+          class="text-h6 mb-4 text-highlight"
           data-aos="zoom-in"
           data-aos-easing="ease-out-cubic"
           data-aos-delay="100"
@@ -103,7 +104,7 @@
 
       <div class="d-flex flex-column align-center mb-10 mx-2">
         <p
-          class="text-h6 mb-4 text-light-blue-accent-2"
+          class="text-h6 mb-4 text-highlight"
           data-aos="zoom-in"
           data-aos-easing="ease-out-cubic"
           data-aos-delay="100"
@@ -133,7 +134,7 @@
 
       <div class="d-flex flex-column align-center mb-10">
         <p
-          class="text-h6 mb-4 text-light-blue-accent-2"
+          class="text-h6 mb-4 text-highlight"
           data-aos="zoom-in"
           data-aos-easing="ease-out-cubic"
           data-aos-delay="100"

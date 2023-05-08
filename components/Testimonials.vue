@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-fourth py-10">
+  
     <v-container class="hidden-sm-and-down">
       <p class="text-center text-h4 font-weight-bold my-10 text-white">
         What Our Clients Say
@@ -21,10 +21,10 @@
             >
               <v-hover v-slot="{ isHovering, props }" open-delay="100">
                 <v-card
-                  class="mx-auto"
+                  class="mx-auto bg-fourth"
                   max-width="350"
                   height="400"
-                  :color="isHovering ? 'hover' : undefined"
+                  :color="isHovering ? 'background' : undefined"
                   :elevation="isHovering ? 16 : 2"
                   :class="{ 'on-hover': isHovering }"
                   open-delay="200"
@@ -34,20 +34,20 @@
                     class="d-flex flex-column justify-space-between h-100 pa-10"
                   >
                     <div>
-                      <v-icon size="large" color="accent"
+                      <v-icon size="large" color="highlight"
                         >mdi-format-quote-open-outline</v-icon
                       >
-                      <p class="text-accent d-inline pa-3">
+                      <p class="text-white d-inline pa-3">
                         {{ testimonial.quote }}
                       </p>
-                      <v-icon size="large" color="accent">
+                      <v-icon size="large" color="highlight">
                         mdi-format-quote-close-outline
                       </v-icon>
                     </div>
 
                     <div class="d-flex flex-column justify-center align-center">
                       <v-avatar :image="testimonial.image" size="80"></v-avatar>
-                      <p class="text-accent mt-3">{{ testimonial.author }}</p>
+                      <p class="text-white mt-3">{{ testimonial.author }}</p>
                     </div>
                   </v-card-text>
                 </v-card>
@@ -57,7 +57,7 @@
         </v-carousel-item>
       </v-carousel>
     </v-container>
-  </section>
+
 
   <!-- Show on sm screen  -->
   <v-container
