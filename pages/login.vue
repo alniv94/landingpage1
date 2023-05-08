@@ -7,22 +7,22 @@
 </template>
 
 <script>
-  export default {
-    mounted() {
-      this.setAnimation()
-    },
-
-    methods: {
-      setAnimation() {
-        this.$anime({
-          targets: '.title',
-          translateX: 250,
-          rotate: '1turn',
-          backgroundColor: '#FFF',
-          duration: 2000,
-          loop: true
-        })
-      }
-    }
-  }
+import anime from 'animejs/lib/anime.es.js';
+anime({
+  targets: '.title .el',
+  left: '240px',
+  backgroundColor: '#FFF',
+  borderRadius: ['0%', '50%'],
+  easing: 'easeInOutQuad'
+});
 </script>
+
+
+<style>
+.title{
+  height: 200px;
+  width: 200px;
+  border-color: aqua;
+}
+
+</style>

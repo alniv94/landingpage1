@@ -30,7 +30,7 @@ export default defineNuxtPlugin((nuxt) =>{
                   tertiary : '#F0F5F9',
                   trial: '#F0FBFF',
                   trial2: '#7AC3E7',
-                  hover: '#E3F2FD',
+                  hover: '#E8EAF6',
                   highlight:'#40C4FF'
                   
                 }

@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-fourth my-10 py-5">
+  <section class="bg-hover my-10 py-5">
     <v-container>
       <p class="text-h4 text-center font-weight-bold">Our Top Clients</p>
       <div class="d-flex flex-lg-row flex-sm-column justify-space-between ">

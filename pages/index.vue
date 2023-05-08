@@ -4,7 +4,7 @@
     <Products/>
     <About/>
     <WhyUs/>
-    <Customer/>
+    <Client/>
     <Testimonials/>
     <Contact/>
     <Subfooter/>
