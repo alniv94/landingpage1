@@ -1,7 +1,7 @@
 <template>
   <v-container class="bg-fourth" fluid>
     <v-row justify="space-evenly" class="ma-15">
-      <v-col data-aos="fade-right" data-aos-duration="1000">
+      <v-col data-aos="fade-right" data-aos-duration="500">
         <p class="text-h4 text-white py-5 font-weight-bold">
           What is Apollo Website Builder?
         </p>
@@ -14,7 +14,7 @@
           and achieve greater efficiency.
         </p>
       </v-col>
-      <v-col data-aos="fade-left" data-aos-duration="1000">
+      <v-col data-aos="fade-left" data-aos-duration="500">
         <Icon
           name="mingcute:quote-left-fill"
           size="2em"
