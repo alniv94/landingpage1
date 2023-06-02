@@ -33,9 +33,9 @@ const resources = [
     link: "/apps/recruitment",
   },
   {
-    title: "Expenses",
+    title: "Employee",
     value: 3,
-    link: "/apps/expenses",
+    link: "/apps/employee",
   },
 ];
 </script>

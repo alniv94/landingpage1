@@ -8,11 +8,27 @@
     <Testimonials/>
     <Contact/>
     <Subfooter/>
+
+ 
+
   </v-container>
 </template>
 
-<script setup>
-
+<script>
+export default {
+  computed: {
+    component() {
+      switch (this.$route.params.component) {
+        case 'a':
+          return ComponentA
+        case 'b':
+          return ComponentB
+        default:
+          return null
+      }
+    }
+  }
+}
 </script>
 
 
