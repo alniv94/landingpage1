@@ -1,19 +1,21 @@
 <template>
-    <v-container fluid>
-        <Hero/>
-        <Footer/>
-    </v-container>
-    
+  <v-container  class="pa-0 ma-0 bg-background" fluid >
+    <Hero />
+    <Products/>
+    <About/>
+    <WhyUs/>
+    <Client/>
+    <Testimonials/>
+    <Contact/>
+    <Subfooter/>
+  </v-container>
 </template>
 
 <script setup>
-    import Hero from './components/Hero.vue';
-    import Footer from './components/Footer.vue';
-    import Navigation from './components/Navigation.vue';
+
 </script>
 
+
 <style scoped>
-*{
-  padding: 0px !important;
-}
+ 
 </style>

@@ -9,9 +9,18 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "^3.4.0"
+    "@mdi/js": "^7.2.96",
+    "@types/aos": "^3.0.4",
+    "nuxt": "^3.4.0",
+    "nuxt-animejs": "^1.2.5",
+    "nuxt-icon": "^0.3.3"
   },
   "dependencies": {
+    "@mdi/font": "^7.2.96",
+    "@vueuse/core": "^10.1.0",
+    "animate.css": "^4.1.1",
+    "animejs": "^3.2.1",
+    "aos": "^2.3.4",
     "vuetify": "^3.1.14"
   }
 }
