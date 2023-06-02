@@ -12,10 +12,9 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
-  modules: ["nuxt-icon",],
-  plugins: [
-    { src: '~/plugins/aos', mode: 'client' },
-  ],
+  modules: ["nuxt-icon", ],
+ 
+  
 
   
   
