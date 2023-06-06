@@ -1,13 +1,9 @@
 <template>
   <v-app>
     <v-container fluid class="pa-0 ma-0">
-      <Navigation/>
-      <slot /> 
-      <Footer/>
+      <LandingNavigation />
+      <slot />
+      <LandingFooter />
     </v-container>
   </v-app>
 </template>
-
-<script>
-
-</script>

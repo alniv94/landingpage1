@@ -1,90 +1,64 @@
 <template>
   <v-container>
     <v-app-bar
-      class="bg-background"
-      app
+      :class="drawer ? 'bg-grey-lighten-5' : 'nav'"
       elevation="0"
       scroll-behavior="hide"
-      scroll-threshold="80"
+      scroll-threshold="160"
     >
-      <v-row>
-        <v-col cols="12" sm="6">
-          <div class="d-flex">
-            <NuxtLink to="/" class="ml-15">
-              <v-img src="./images/logo.png" width="40" height="60"></v-img
-            ></NuxtLink>
-            <v-app-bar-title class="text-white pt-5">
-              <NuxtLink to="/" class="text-decoration-none text-white">
-                Apollo System</NuxtLink
-              >
-            </v-app-bar-title>
-            <template v-if="isMobile">
-              <v-icon
-                @click="drawer = !drawer"
-                class="text-white align-center pr-10 ma-auto"
-                >mdi-menu</v-icon
-              >
-            </template>
-          </div>
-        </v-col>
-        <v-col>
-          <div class="d-flex">
-            <v-app-bar-title
-              class="text-white pointer py-5"
-              @click="drawer = !drawer"
-              v-if="!isMobile"
-              >Apps
-              <v-icon v-if="!isMobile" class="text-white pointer" size="small">
-                {{ drawer ? closeIcon : chevronDownIcon }}
-              </v-icon>
-            </v-app-bar-title>
-          </div>
-        </v-col>
-      </v-row>
-    </v-app-bar>
+      <v-app-bar-title class="d-flex justify-center align-center">
+        <a href="/" class="d-flex align-center text-white text-decoration-none">
+          <v-img src="./img/landing/hero/logo.png" width="40" height="40" />
+          <p :class="drawer ? 'text-black' : 'text-white'">Apollo System</p>
+        </a>
+      </v-app-bar-title>
+      <v-spacer />
+      <v-app-bar-title
+        :class="[
+          'pointer d-none d-md-block',
+          drawer ? 'text-black' : 'text-grey-lighten-5',
+        ]"
+        @click="drawer = !drawer"
+      >
+        Apps
+        <Icon
+          :name="drawer ? 'mdi-close' : 'mdi-chevron-down'"
+          :class="['pointer', drawer ? 'text-black' : 'text-grey-lighten-5']"
+        />
+      </v-app-bar-title>
 
-    <v-navigation-drawer
-      app
-      v-model="drawer"
-      location="top"
-      disable-resize-watcher
-      temporary
-    >
-      <!--Dropdown Menu-->
-      <div class="d-flex justify-space-between flex-lg-row flex-column">
-        <Finance />
-        <Inventory />
-        <Website />
-        <Sale />
-        <HumanResource />
-      </div>
-    </v-navigation-drawer>
+      <v-spacer />
+      <v-app-bar-title class="hidden-sm-and-down">
+        <a href="/login" class="text-decoration-none text-light-blue-accent-2"
+          >Sign in</a
+        >
+      </v-app-bar-title>
+
+      <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = !drawer" />
+    </v-app-bar>
   </v-container>
+  <v-navigation-drawer
+    v-model="drawer"
+    location="top"
+    temporary
+    disable-resize-watcher
+    style="height: 500px"
+    class="bg-grey-lighten-5"
+  >
+    <LandingDropdown />
+  </v-navigation-drawer>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const drawer = ref(false);
-const isMobile = ref(false);
-
-// hamburger menu in small screen
-const chevronDownIcon = "mdi-chevron-down";
-const closeIcon = "mdi-close";
-const handleResize = () => {
-  isMobile.value = window.innerWidth < 768;
-};
-
-onMounted(() => {
-  isMobile.value = window.innerWidth < 768;
-  window.addEventListener("resize", handleResize);
-});
-
-onBeforeUnmount(() => {
-  window.removeEventListener("resize", handleResize);
-});
 </script>
 
 <style scoped>
 .pointer {
   cursor: pointer;
+}
+
+.nav {
+  background-color: #101a2b !important;
 }
 </style>
