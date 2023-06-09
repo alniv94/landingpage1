@@ -29,7 +29,7 @@
 
       <v-spacer />
       <v-app-bar-title class="hidden-sm-and-down">
-        <a href="/login" class="text-decoration-none text-light-blue-accent-2"
+        <a href="/login" class="text-decoration-none text-light-blue-accent-4"
           >Sign in</a
         >
       </v-app-bar-title>

@@ -13,7 +13,7 @@
       <v-col v-for="(product, k) in products" :key="k" cols="12" md="3">
         <v-list class="ma-3">
           <v-list-subheader active-class="bg-red">
-            <span class="text-h6 text-light-blue-accent-2">{{ k }}</span>
+            <span class="text-h6 text-light-blue-accent-4">{{ k }}</span>
           </v-list-subheader>
           <v-divider />
           <v-list-item

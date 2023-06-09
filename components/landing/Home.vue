@@ -60,3 +60,8 @@ const items = [
   },
 ];
 </script>
+<style scoped>
+.banner {
+  background: #151f32;
+}
+</style>

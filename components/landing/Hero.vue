@@ -1,6 +1,6 @@
 <template>
   <v-container
-    class="px-4 px-md-15 fill-height h-screen align-content-center banner"
+    class="px-4 px-md-15 fill-height h-screen align-content-center hero"
     fluid
   >
     <v-row class="d-flex justify-center align-center pa-5">
@@ -64,7 +64,7 @@ const { vFadeIn } = useAnimation();
 </script>
 
 <style scoped>
-.banner {
+.hero {
   background-color: #101a2b;
   border-radius: 0 0 50%;
 }

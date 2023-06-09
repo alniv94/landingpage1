@@ -6,22 +6,44 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "prepare": "husky install",
+    "lint:js": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
+    "lint:style": "stylelint **/*.{vue,css,scss} --ignore-path .gitignore",
+    "lint": "npm run lint:js && npm run lint:style",
+    "lintfix": "eslint --fix --ext .js,.jsx,.ts,.tsx,.vue --ignore-path .gitignore . && stylelint --fix **/*.{vue,css,scss} --ignore-path .gitignore"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown",
+    "*.{js,jsx,ts,tsx,vue}": "eslint --fix --ignore-path .gitignore",
+    "*.{css,scss,vue}": "stylelint --fix --ignore-path .gitignore"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "devDependencies": {
     "@mdi/js": "^7.2.96",
     "@types/animejs": "^3.1.7",
-    "nuxt": "^3.4.0",
-    "nuxt-icon": "^0.3.3",
-    "husky": "^8.0.3"
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "nuxt": "^3.5.2",
+    "vite-plugin-dynamic-import": "^1.2.7",
+		"vite-plugin-vuetify": "^1.0.2",
+    "nuxt-icon": "^0.3.3"
   },
   "dependencies": {
     "@mdi/font": "^7.2.96",
     "@vue-macros/nuxt": "^1.2.3",
-		"@vueuse/components": "^9.13.0",
-		"@vueuse/core": "^9.13.0",
-		"@vueuse/nuxt": "^9.13.0",
-    "animejs": "^3.2.1",
-    "vuetify": "^3.1.14"
+    "@vueuse/components": "^9.13.0",
+    "@vueuse/core": "^9.13.0",
+    "@vueuse/nuxt": "^9.13.0",
+    "vuetify": "^3.3.2",
+    "animejs": "^3.2.1"
   }
 }
