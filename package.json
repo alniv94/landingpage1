@@ -7,7 +7,6 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "prepare": "husky install",
     "lint:js": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css,scss} --ignore-path .gitignore",
     "lint": "npm run lint:js && npm run lint:style",
@@ -30,12 +29,11 @@
     "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
     "nuxt": "^3.5.2",
+    "nuxt-icon": "^0.3.3",
     "vite-plugin-dynamic-import": "^1.2.7",
-		"vite-plugin-vuetify": "^1.0.2",
-    "nuxt-icon": "^0.3.3"
+    "vite-plugin-vuetify": "^1.0.2"
   },
   "dependencies": {
     "@mdi/font": "^7.2.96",
@@ -43,7 +41,7 @@
     "@vueuse/components": "^9.13.0",
     "@vueuse/core": "^9.13.0",
     "@vueuse/nuxt": "^9.13.0",
-    "vuetify": "^3.3.2",
-    "animejs": "^3.2.1"
+    "animejs": "^3.2.1",
+    "vuetify": "^3.3.2"
   }
 }
