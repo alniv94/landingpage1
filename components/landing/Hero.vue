@@ -65,7 +65,7 @@ const { vFadeIn } = useAnimation();
 
 <style scoped>
 .hero {
-  background-color: #101a2b;
+  background: url("../img/apps/CurveLine2.svg");
   border-radius: 0 0 50%;
 }
 </style>

@@ -46,7 +46,7 @@ defineProps<{
 </script>
 <style scoped>
 .banner {
-  background: url("../img/apps/stacked-waves.svg");
+  background: url("../img/apps/CurveLine.svg");
   background-size: cover;
 }
 </style>

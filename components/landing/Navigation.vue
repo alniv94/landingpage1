@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="overflow-hidden">
     <v-app-bar
       :class="drawer ? 'bg-grey-lighten-5' : 'nav'"
       elevation="0"
@@ -34,7 +34,10 @@
         >
       </v-app-bar-title>
 
-      <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = !drawer" />
+      <v-app-bar-nav-icon
+        class="hidden-md-and-up text-white"
+        @click="drawer = !drawer"
+      />
     </v-app-bar>
   </v-container>
   <v-navigation-drawer

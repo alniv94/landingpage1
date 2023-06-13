@@ -8,36 +8,29 @@
       <strong class="text-light-blue-accent-2">apps</strong>
       for every need
     </p>
-    <div
-      class="d-flex flex-wrap flex-lg-row flex-sm-column flex-xs-column align-lg-center justify-lg-space-between justify-sm-center flex-xs-center align-sm-center"
-    >
-      <div
-        v-for="(product, k) in products"
-        :key="k"
-        class="d-flex flex-column align-center mb-10 mx-2"
-      >
-        <p class="text-h6 mb-4 text-light-blue-accent-2">
-          {{ k }}
-        </p>
-
-        <v-list
-          class="d-flex flex-wrap justify-space-between overflow-hidden products"
-        >
-          <v-list-item
-            v-for="(item, index) in product"
-            :key="index"
-            v-stagger:duration="50"
-            class="text-center mb-5 text-white product"
-            :to="item.link"
+    <v-row class="d-flex justify-lg-space-between justify-sm-center flex-wrap">
+      <v-col v-for="(product, k) in products" :key="k" cols="12" sm="6" lg="4">
+        <div class="d-flex flex-column align-center mb-10 mx-2">
+          <p class="text-h6 mb-4 text-light-blue-accent-2">{{ k }}</p>
+          <v-list
+            class="d-flex flex-wrap justify-space-between overflow-hidden products"
           >
-            <Icon :name="item.icon" :size="smAndDown ? '3em' : '4em'" />
-            <p class="text-body-2 font-weight-medium">
-              {{ item.title }}
-            </p>
-          </v-list-item>
-        </v-list>
-      </div>
-    </div>
+            <v-list-item
+              v-for="(item, index) in product"
+              :key="index"
+              v-stagger:duration="50"
+              class="text-center mb-5 text-white product"
+              :to="item.link"
+            >
+              <Icon :name="item.icon" :size="smAndDown ? '3em' : '4em'" />
+              <p class="text-body-2 font-weight-medium wrap">
+                {{ item.title }}
+              </p>
+            </v-list-item>
+          </v-list>
+        </div>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
@@ -134,13 +127,13 @@ const products = {
 .products {
   background-color: #151f32;
 }
-.product::hover {
+/* .product:hover {
   transform: scale(1.2);
   transition: ease 0.5s;
   background-color: blue !important;
-}
+} */
 
 .product {
-  background-color: transparent;
+  max-width: 150px;
 }
 </style>
