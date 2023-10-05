@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-container fluid class="pa-0 ma-0 s">
+    <v-container fluid class="pa-0 ma-0">
       <LandingNavigation />
       <slot />
       <LandingFooter />
