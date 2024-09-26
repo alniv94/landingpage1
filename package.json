@@ -31,7 +31,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "lint-staged": "^13.2.0",
     "nuxt": "^3.5.2",
-    "nuxt-icon": "^0.3.3",
+    "nuxt-icon": "^0.6.0",
     "vite-plugin-dynamic-import": "^1.2.7",
     "vite-plugin-vuetify": "^2.0.0"
   },
