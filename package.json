@@ -39,7 +39,7 @@
     "@mdi/font": "^7.2.96",
     "@vue-macros/nuxt": "^1.2.3",
     "@vueuse/components": "^9.13.0",
-    "@vueuse/core": "^9.13.0",
+    "@vueuse/core": "^11.0.0",
     "@vueuse/nuxt": "^9.13.0",
     "animejs": "^3.2.1",
     "vuetify": "^3.3.2"
